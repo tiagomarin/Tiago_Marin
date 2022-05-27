@@ -10,7 +10,12 @@ body {
 
 header {
   background-color: #3c3a39;
-  font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+  font-family:
+    "Roboto",
+    "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
     sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -43,7 +48,11 @@ header {
 
 h1 {
   color: #ff6b00;
-  font-family: "Crete Round", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+  font-family:
+    "Crete Round",
+    "Gill Sans",
+    "Gill Sans MT",
+    "Trebuchet MS",
     sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -63,7 +72,11 @@ h2 {
 }
 
 .intro p {
-  font-family: "Poppins", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+  font-family:
+    "Poppins",
+    "Gill Sans",
+    "Gill Sans MT",
+    "Trebuchet MS",
     sans-serif;
   font-style: normal;
   font-weight: 400;
