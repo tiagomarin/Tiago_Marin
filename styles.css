@@ -31,12 +31,19 @@ header {
 .logo {
   display: flex;
   align-self: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+}
+
+.menu img {
+  width: 24px;
+  height: auto;
 }
 
 .intro {
@@ -84,12 +91,17 @@ h2 {
   line-height: 24px;
 }
 
-.social-icons {
+ul.social-icons {
   display: flex;
   justify-content: flex-start;
   gap: 5px;
+
+  /* align-items: center; */
   width: 200px;
-  height: 40px;
+  height: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .social-icons img {
