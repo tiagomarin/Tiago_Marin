@@ -5,7 +5,6 @@ body {
 
 .wrapper {
   width: 100%;
-  background: #1c1a19;
 }
 
 header {
@@ -47,10 +46,10 @@ header {
 }
 
 .intro {
-  padding: 120px 24px 0;
+  padding: 120px 24px;
   background: url("assets/illustration-header-mobile.png") no-repeat;
-  background-position: 105% 90%;
-  height: 590px;
+  background-position: 100% 125%;
+  background-color: #1c1a19;
 }
 
 h1 {
@@ -78,6 +77,17 @@ h2 {
   line-height: 32px;
 }
 
+h3 {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
 .intro p {
   font-family:
     "Poppins",
@@ -95,8 +105,6 @@ ul.social-icons {
   display: flex;
   justify-content: flex-start;
   gap: 5px;
-
-  /* align-items: center; */
   width: 200px;
   height: auto;
   list-style-type: none;
@@ -108,4 +116,279 @@ ul.social-icons {
   padding: 5px;
   width: 24px;
   height: 24px;
+}
+
+/* PORTFOLIO PART 2 */
+
+/* grid-template */
+.projects-grid {
+  background: rgb(255, 255, 255);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.grid-title {
+  border-bottom: 1px solid #212121;
+  grid-column: span 3;
+  margin: 120px 24px;
+}
+
+.grid-title h3 {
+  padding: 0 0 24px 0;
+  color: #091e42;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+article.featured {
+  color: #091e42;
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: auto;
+}
+
+/* ----------------- */
+
+/* featured card */
+.featured img {
+  padding-bottom: 24px;
+}
+
+article img,
+.featured-project img {
+  width: 100%;
+}
+
+/* ----------------- */
+
+/* cards */
+article {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrap-card {
+  margin: 0 16px;
+}
+
+.project1 {
+  background-image:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url("assets/project1-web.jpg");
+}
+
+.project2 {
+  background-image: url("assets/project2.jpg");
+}
+
+.project3 {
+  background-image: url("assets/project3.jpg");
+}
+
+.project4 {
+  background-image: url("assets/project4.jpg");
+}
+
+.project5 {
+  background-image: url("assets/project5.jpg");
+}
+
+.project6 {
+  background-image: url("assets/project6.jpg");
+}
+
+/* ----------------- */
+
+/* card text styles */
+#article-h {
+  color: #091e42;
+}
+
+article p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin: 0;
+  padding: 12px 0;
+}
+
+#featured-p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #091e42;
+  padding: 12px 0;
+}
+
+.aboutme p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 12px;
+}
+
+/* ----------------- */
+
+/* languages buttons */
+.lang {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 40px;
+  font-size: 17px;
+  gap: 12px;
+  margin-bottom: 0;
+  padding: 12px 0;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+  font-family: "Inter";
+  font-size: 15px;
+  color: white;
+  border: 0;
+}
+
+/* ----------------- */
+
+/* featured button */
+.featured button {
+  background: #fff;
+  border: 1px solid #8993a4;
+  color: #091e42;
+}
+
+/* ----------------- */
+
+/* See Project small button */
+div .see-project {
+  background: #ff6b00;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: white;
+  max-height: 48px;
+  padding: 12px;
+}
+
+/* ----------------- */
+
+/* See Project mobile large button */
+.card-link {
+  display: flex;
+  flex-direction: column;
+}
+
+article a .see-project {
+  margin: 0 12px;
+  width: 124px;
+  display: block;
+}
+
+/* ----------------- */
+
+/* About me */
+.aboutme {
+  margin-top: 120px;
+  padding: 120px 24px 0;
+  background: url("assets/illustration-about-me-mobile.png") no-repeat;
+  background-position: 105% 90%;
+  justify-content: center;
+  background-color: #1c1a19;
+}
+
+.aboutme h1 {
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  text-align: center;
+}
+
+.get-resume {
+  border-bottom: 1px solid white;
+  padding-bottom: 209px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 120px 0;
+  background: #1c1a19;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family:
+    "Inter",
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.skills li {
+  font-weight: 400;
+  font-size: 22px;
+  padding: 24px 0;
+}
+
+/* ----------------- */
+
+/* responsive */
+@media screen and (max-width: 980px) {
+  article {
+    display: grid;
+    grid-column: span 3;
+    margin: 0 24px;
+  }
+
+  article.featured {
+    display: block;
+  }
+
+  .skills {
+    display: block;
+  }
 }
