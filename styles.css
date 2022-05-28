@@ -40,6 +40,11 @@ header {
   align-items: flex-start;
 }
 
+article img,
+.featured-project img {
+  width: 100%;
+}
+
 .menu img {
   width: 24px;
   height: auto;
@@ -96,6 +101,27 @@ h3 {
   color: #fff;
   margin: 0;
   padding: 0 0 0 0;
+}
+
+article p {
+  font-family:
+    "Inter",
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin: 0;
+  padding: 12px 0;
 }
 
 .intro p {
@@ -169,11 +195,6 @@ article.featured {
   padding-bottom: 24px;
 }
 
-article img,
-.featured-project img {
-  width: 100%;
-}
-
 /* ----------------- */
 
 /* cards */
@@ -221,27 +242,6 @@ article {
 /* card text styles */
 #article-h {
   color: #091e42;
-}
-
-article p {
-  font-family:
-    "Inter",
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: white;
-  margin: 0;
-  padding: 12px 0;
 }
 
 #featured-p {
