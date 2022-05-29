@@ -9,12 +9,7 @@ body {
 
 header {
   background-color: #3c3a39;
-  font-family:
-    "Roboto",
-    "Gill Sans",
-    "Gill Sans MT",
-    Calibri,
-    "Trebuchet MS",
+  font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -63,11 +58,7 @@ article img,
 
 h1 {
   color: #ff6b00;
-  font-family:
-    "Crete Round",
-    "Gill Sans",
-    "Gill Sans MT",
-    "Trebuchet MS",
+  font-family: "Crete Round", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
     sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -87,17 +78,8 @@ h2 {
 }
 
 h3 {
-  font-family:
-    "Crete Round",
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: "Crete Round", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -108,17 +90,8 @@ h3 {
 }
 
 article p {
-  font-family:
-    "Inter",
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -129,11 +102,7 @@ article p {
 }
 
 .intro p {
-  font-family:
-    "Poppins",
-    "Gill Sans",
-    "Gill Sans MT",
-    "Trebuchet MS",
+  font-family: "Poppins", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
     sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -212,8 +181,7 @@ article {
 }
 
 .project1 {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -249,17 +217,8 @@ article {
 }
 
 #featured-p {
-  font-family:
-    "Inter",
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -269,17 +228,8 @@ article {
 }
 
 .aboutme p {
-  font-family:
-    "Inter",
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -305,17 +255,8 @@ article {
 button {
   background: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
-  font-family:
-    "Inter",
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
   color: white;
   border: 0;
@@ -339,17 +280,8 @@ div .see-project {
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-family:
-    "Inter",
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 17px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -412,17 +344,8 @@ article a .see-project {
   list-style-type: none;
   margin: 0;
   padding: 0 24px;
-  font-family:
-    "Inter",
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
