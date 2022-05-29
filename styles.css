@@ -40,6 +40,10 @@ header {
   align-items: flex-start;
 }
 
+.menu a {
+  height: 24px;
+}
+
 article img,
 .featured-project img {
   width: 100%;
@@ -286,7 +290,7 @@ article {
 /* ----------------- */
 
 /* languages buttons */
-.lang {
+.lang ul {
   display: flex;
   flex-direction: row;
   width: auto;
@@ -295,6 +299,7 @@ article {
   gap: 12px;
   margin-bottom: 0;
   padding: 12px 0;
+  list-style-type: none;
 }
 
 button {
@@ -440,6 +445,7 @@ article a .see-project {
 /* ----------------- */
 
 /* responsive */
+
 @media screen and (max-width: 980px) {
   article {
     display: grid;
@@ -449,6 +455,10 @@ article a .see-project {
 
   article.featured {
     display: block;
+  }
+
+  .featured.lang ul {
+    margin: -16px;
   }
 
   .skills {
