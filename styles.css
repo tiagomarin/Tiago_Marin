@@ -1,0 +1,111 @@
+body {
+  color: white;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  background: #1c1a19;
+}
+
+header {
+  background-color: #3c3a39;
+  font-family:
+    "Roboto",
+    "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
+    sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px;
+  max-height: 24px;
+}
+
+.logo {
+  display: flex;
+  align-self: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.menu img {
+  width: 24px;
+  height: auto;
+}
+
+.intro {
+  padding: 120px 24px 0;
+  background: url("assets/illustration-header-mobile.png") no-repeat;
+  background-position: 105% 90%;
+  height: 590px;
+}
+
+h1 {
+  color: #ff6b00;
+  font-family:
+    "Crete Round",
+    "Gill Sans",
+    "Gill Sans MT",
+    "Trebuchet MS",
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  gap: 12px;
+  margin: 0;
+}
+
+h2 {
+  color: #fff5e1;
+  font-family: "Roboto", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.intro p {
+  font-family:
+    "Poppins",
+    "Gill Sans",
+    "Gill Sans MT",
+    "Trebuchet MS",
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+
+  /* align-items: center; */
+  width: 200px;
+  height: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons img {
+  padding: 5px;
+  width: 24px;
+  height: 24px;
+}
