@@ -3,11 +3,6 @@ body {
   margin: 0;
 }
 
-.wrapper {
-  width: 100%;
-  background: #1c1a19;
-}
-
 header {
   background-color: #3c3a39;
   font-family:
@@ -28,6 +23,8 @@ header {
   max-height: 24px;
 }
 
+/* TOP NAV BAR */
+
 .logo {
   display: flex;
   align-self: center;
@@ -41,18 +38,31 @@ header {
   align-items: flex-start;
 }
 
-.menu img {
+.menu a {
+  height: 24px;
+}
+
+.menu-img {
   width: 24px;
   height: auto;
 }
 
+/* ------------------------ */
+
+/* 1st section - INTRO */
+
+/* ------------------------ */
+
 .intro {
-  padding: 120px 24px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 120px 24px;
   background: url("assets/illustration-header-mobile.png") no-repeat;
-  background-position: 105% 90%;
-  height: 590px;
+  background-position: right 120%;
+  background-color: #1c1a19;
 }
 
+/* intro title */
 h1 {
   color: #ff6b00;
   font-family:
@@ -69,6 +79,7 @@ h1 {
   margin: 0;
 }
 
+/* intro sub title */
 h2 {
   color: #fff5e1;
   font-family: "Roboto", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
@@ -78,6 +89,7 @@ h2 {
   line-height: 32px;
 }
 
+/* intro text */
 .intro p {
   font-family:
     "Poppins",
@@ -89,14 +101,14 @@ h2 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  max-width: 566px;
 }
 
+/* social icons bar */
 ul.social-icons {
   display: flex;
   justify-content: flex-start;
   gap: 5px;
-
-  /* align-items: center; */
   width: 200px;
   height: auto;
   list-style-type: none;
@@ -108,4 +120,775 @@ ul.social-icons {
   padding: 5px;
   width: 24px;
   height: 24px;
+}
+
+/* ------------------------ */
+
+/* 2ND section - RECENT WORKS */
+
+/* ------------------------ */
+
+/* grid to works cards */
+.recent-works {
+  background: rgb(255, 255, 255);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+/* HEADLINE (divisor) */
+
+.recent-works-headline {
+  grid-column: span 3;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-works-headline h3 {
+  color: #091e42;
+  text-align: center;
+  font-family:
+    "Crete Round",
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 16px 0 36px;
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+
+/* divisor line */
+hr {
+  border-bottom: 1px solid #212121;
+  line-height: 24px;
+  margin: 0;
+  width: 327px;
+  height: 0;
+}
+
+/* ------------------------ */
+
+/* STANDARD CARDS */
+
+/* ------------------------ */
+
+/* card wrapper */
+article {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  grid-column: span 3;
+  margin: 0 24px;
+  padding: 0;
+}
+
+/* mobile card wrapper */
+.wrap-card {
+  margin: 0 16px;
+}
+
+/* cards background images */
+:where(article img),
+.featured-card img {
+  width: 100%;
+}
+
+.card1 {
+  background-image:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url("assets/project1-web.jpg");
+}
+
+.card2 {
+  background-image: url("assets/project2.jpg");
+}
+
+.card3 {
+  background-image: url("assets/project3.jpg");
+}
+
+.card4 {
+  background-image: url("assets/project4.jpg");
+}
+
+.card5 {
+  background-image: url("assets/project5.jpg");
+}
+
+.card6 {
+  background-image: url("assets/project6.jpg");
+}
+
+/* cards text styles */
+.card-h {
+  font-family:
+    "Crete Round",
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin: 0;
+  padding: 94px 0 0 0;
+}
+
+.card-p {
+  font-family:
+    "Inter",
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin: 0;
+  padding: 12px 0;
+}
+
+/* languages buttons */
+.lang ul {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 40px;
+  font-size: 17px;
+  gap: 12px;
+  margin: 0;
+  padding: 12px 0;
+  list-style-type: none;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+  font-family:
+    "Inter",
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  color: white;
+  border: 0;
+}
+
+/* ************************* */
+
+/* ************************* */
+
+/* See Project small button */
+div .see-project {
+  background: #ff6b00;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family:
+    "Inter",
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: white;
+  max-height: 48px;
+  padding: 12px;
+}
+
+/* See Project mobile large button */
+.card-link {
+  display: flex;
+  flex-direction: column;
+}
+
+article a .see-project {
+  margin: 0 12px;
+  width: 124px;
+  display: block;
+}
+
+/* ************************* */
+
+/* ************************* */
+
+/* ----------------- */
+
+/* FEATURED card */
+
+/* ----------------- */
+
+article.featured {
+  color: #091e42;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: auto;
+  width: auto;
+  margin-top: 64px;
+}
+
+/* fetured text styles */
+.wrap-featured {
+  padding-top: 24px;
+}
+
+.featured .card-h {
+  color: #091e42;
+  padding: 0;
+}
+
+#featured-p {
+  font-family:
+    "Inter",
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  padding: 12px 0;
+}
+
+/* featured languages buttons */
+.featured button {
+  background: #fff;
+  border: 1px solid #8993a4;
+  color: #091e42;
+}
+
+/* ----------------- */
+
+/* 3ND section - ABOUT ME */
+
+/* ----------------- */
+
+.aboutme {
+  margin-top: 120px;
+  padding: 120px 24px 0;
+  background: url("assets/illustration-about-me-mobile.png") no-repeat;
+  background-position: right bottom;
+  justify-content: center;
+  background-color: #1c1a19;
+  color: #f4f5f7;
+}
+
+.aboutme h1 {
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  text-align: center;
+}
+
+.aboutme p {
+  font-family:
+    "Inter",
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 12px;
+  max-width: 566px;
+}
+
+/* get resume button */
+.get-resume {
+  border-bottom: 1px solid white; /* divisor line */
+  padding-bottom: 209px;
+}
+
+/* grid for skills list */
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 120px 0;
+  background: #1c1a19;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* skills box */
+.skills ul {
+  grid-column: span 3;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 24px;
+  font-family:
+    "Inter",
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+/* skills category */
+.skills li {
+  padding: 12px 24px;
+}
+
+/* list of skills */
+.items {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+/* ----------------- */
+
+/* RESPONSIVENESS */
+
+/* ----------------- */
+
+/* mobile landscape */
+@media screen and (min-width: 480px) and (max-width: 915px) {
+  .intro {
+    background: url("assets/Illustration-header2.png") no-repeat;
+    background-position: right;
+    background-size: 38%;
+    background-color: #1c1a19;
+    padding: 80px 0 80px 40px;
+  }
+
+  .intro h2 {
+    margin: 0;
+    padding: 24px 0;
+    font-size: 18px;
+  }
+
+  .intro p {
+    margin: 0;
+    padding: 0 0 24px;
+    width: 380px;
+  }
+
+  .intro ul {
+    float: left;
+  }
+
+  .recent-works .recent-works-headline {
+    grid-column: span 6;
+  }
+
+  .recent-works {
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  article {
+    grid-column: span 3;
+    width: 100%;
+    margin: 0;
+  }
+
+  article.featured {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    flex-direction: row;
+    padding: 0;
+    gap: 24px;
+    color: #091e42;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .featured img {
+    grid-column: span 2;
+  }
+
+  .wrap-featured {
+    grid-column: span 2;
+    padding: 0;
+  }
+
+  article a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutme {
+    margin-top: 80px;
+    padding: 80px 0 0 40px;
+    background: url("assets/illustration-about-me.png") no-repeat;
+    background-position: right;
+    background-size: 42%;
+    background-color: #1c1a19;
+  }
+
+  .aboutme h1 {
+    text-align: left;
+  }
+
+  .aboutme p {
+    width: 344px;
+    padding: 0 0 28px 0;
+  }
+
+  .get-resume {
+    padding-bottom: 60px;
+    margin-right: 60px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 80px 60px;
+  }
+
+  .skills ul {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    padding: 0;
+  }
+
+  .skills li {
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .skills li:nth-child(2) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(3) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(4) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(5) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(6) {
+    text-align: left;
+    padding-left: 46px;
+  }
+}
+
+/* ----------------- */
+
+/* medium screens  */
+
+/* ----------------- */
+
+@media screen and (min-width: 916px) and (max-width: 1199px) {
+  .intro {
+    background: url("assets/Illustration-header2.png") no-repeat;
+    background-position: right;
+    background-size: 32%;
+    background-color: #1c1a19;
+    padding: 100px 0 100px 60px;
+  }
+
+  .intro h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .intro h2 {
+    font-size: 32px;
+    line-height: 44px;
+    color: white;
+    margin: 0;
+    padding: 24px 0;
+  }
+
+  .intro p {
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+    margin: 0;
+  }
+
+  .recent-works-headline h1 {
+    margin-top: 60px;
+  }
+
+  .recent-works {
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .recent-works-headline {
+    grid-column: span 6;
+  }
+
+  article {
+    grid-column: span 3;
+    width: 100%;
+    margin: 0;
+  }
+
+  .wrap-card p {
+    max-width: 345px;
+  }
+
+  article.featured {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    padding: 0;
+    gap: 24px;
+    color: #091e42;
+    margin-top: 30px;
+  }
+
+  .featured p {
+    max-width: 345px;
+  }
+
+  .featured img {
+    min-width: 455px;
+  }
+
+  .wrap-featured {
+    padding-top: 0;
+  }
+
+  .aboutme {
+    padding: 130px 142px 0 60px;
+    background: url("assets/illustration-about-me.png") no-repeat;
+    background-position: right;
+    background-size: 38%;
+    background-color: #1c1a19;
+  }
+
+  .aboutme h1 {
+    text-align: left;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .aboutme p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
+    padding: 0 0 48px 0;
+  }
+
+  .get-resume {
+    padding-bottom: 139px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 146px 141px;
+  }
+
+  .skills ul {
+    padding: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .skills li {
+    text-align: left;
+    padding: 12px 0;
+  }
+}
+
+/* ----------------- */
+
+/* bigger desktop screens  */
+
+/* ----------------- */
+
+@media screen and (min-width: 1200px) {
+  .intro {
+    background: url("assets/Illustration-header2.png") no-repeat;
+    background-position: right;
+    background-size: 38%;
+    background-color: #1c1a19;
+    padding: 192px 141px 251px;
+  }
+
+  .intro h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .intro h2 {
+    font-size: 32px;
+    line-height: 44px;
+    color: white;
+    margin: 0;
+    padding: 24px 0;
+  }
+
+  .intro p {
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+    margin: 0;
+  }
+
+  .intro ul {
+    float: left;
+  }
+
+  .recent-works {
+    margin: 0 141.5px;
+  }
+
+  article {
+    grid-column: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  article.featured {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    padding: 0;
+    gap: 24px;
+    color: #091e42;
+  }
+
+  .wrap-featured {
+    padding-top: 0;
+  }
+
+  .aboutme {
+    padding: 130px 142px 0 130px;
+    background: url("assets/illustration-about-me.png") no-repeat;
+    background-position: right;
+    background-size: 38%;
+    background-color: #1c1a19;
+  }
+
+  .aboutme h1 {
+    text-align: left;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .aboutme p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
+    padding: 0 0 48px 0;
+  }
+
+  .get-resume {
+    padding-bottom: 139px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 146px 141px;
+  }
+
+  .skills ul {
+    padding: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .skills li {
+    text-align: left;
+    padding: 12px 0;
+  }
 }
