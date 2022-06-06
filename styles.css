@@ -281,8 +281,6 @@ article {
 
 /* languages buttons */
 .lang ul {
-  display: flex;
-  flex-direction: row;
   width: auto;
   height: 40px;
   font-size: 17px;
@@ -290,6 +288,9 @@ article {
   margin: 0;
   padding: 12px 0;
   list-style-type: none;
+}
+.lang li {
+  float: left;
 }
 
 button {
