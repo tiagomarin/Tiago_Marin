@@ -281,6 +281,7 @@ article {
 
 /* languages buttons */
 .lang ul {
+ float: right;
   width: auto;
   height: 40px;
   font-size: 17px;
@@ -290,7 +291,10 @@ article {
   list-style-type: none;
 }
 .lang li {
+  
   float: left;
+
+
 }
 
 button {
