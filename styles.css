@@ -281,7 +281,7 @@ article {
 
 /* languages buttons */
 .lang ul {
- float: right;
+  float: right;
   width: auto;
   height: 40px;
   font-size: 17px;
@@ -291,10 +291,8 @@ article {
   list-style-type: none;
 }
 .lang li {
-  
   float: left;
-
-
+  
 }
 
 button {
@@ -349,6 +347,7 @@ div .see-project {
 
 /* See Project mobile large button */
 .card-link {
+  clear: both;
   display: flex;
   flex-direction: column;
 }
