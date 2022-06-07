@@ -952,3 +952,21 @@ article.featured {
     padding: 12px 0;
   }
 }
+/* form part */
+.form h3{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;  
+  text-align: center;
+}
+input{
+  display: flex;
+  margin-top: 24px;
+  border: #dbd8d7;
+}
+textarea{
+  margin-top: 24px;
+}
