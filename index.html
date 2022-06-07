@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,49 +11,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet"  href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <header>
-        <a class="logo" href="#">Tiago L. Marin</a>
+    <header id="header-mobile">
+        <a href="#">
+            <img class="logo" src="assets/logo-no-back1.png" alt="logo, go to home">
+        </a>
         <nav class="menu">
             <a href="#" target="_blank">
-                <img class="menu-img" src="./assets/icon-menu.png" alt="Menu Button">
+                <img class="menu-img" src="assets/icon-menu.png" alt="Menu Button">
             </a>
         </nav>
     </header>
+    <header id=header-desktop>
+        <img class="logo" src="assets/logo-no-back1.png" alt="logo, go to home">
+        <nav>
+            <ul class="desktop-nav">
+                <li>
+                    <a class="desktop-nav-links" href="#" target="_blank">Portfolio</a>
+                </li>
+                <li>
+                    <a class="desktop-nav-links" href="#" target="_blank">About</a>
+                </li>
+                <li>
+                    <a class="desktop-nav-links" href="#" target="_blank">Contact</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img class="email-icon" src="./assets/icon-mail.png" alt="email contact">
+                    </a>
+                </li>
+                <ul>
+        </nav>
+    </header>
     <section class="intro">
-        <h1>Hey There.<br>I'm Tiago</h1>
-        <h2>I'm a Software Developer</h2>
-        <p>
-            I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
-        </p>
+        <div class="wrap-intro">
+            <h1>Hey There.<br>I'm Tiago</h1>
+            <h2>I'm a Software Developer</h2>
+            <p>
+                I can help you build a product , feature or website. Look through some of my work and experience! If you
+                like what you see and have a project you need coded, don't hestiate to contact me.
+            </p>
+        </div>
         <ul class="social-icons">
             <li>
-            <a href="#" target="_blank">
-                <img src="assets/icon-gitHub.png" alt="Github Page">
-            </a>
-            </li>
-            <li>
                 <a href="#" target="_blank">
-                    <img src="assets/icon-linkedin.png" alt="Linked-in  Page">
+                    <img src="assets/icon-github.png" alt="Github Page">
                 </a>
             </li>
             <li>
                 <a href="#" target="_blank">
-                    <img src="assets/icon-angelist.png" alt="Github Page">
+                    <img src="assets/icon-linkedin.png" alt="Linked-in profile">
                 </a>
             </li>
             <li>
                 <a href="#" target="_blank">
-                    <img src="assets/icon-twitter.png" alt="Twitter">
+                    <img src="assets/icon-angellist.png" alt="Angellist page">
                 </a>
             </li>
             <li>
                 <a href="#" target="_blank">
-                    <img src="assets/icon-medium.png" alt="Github Page">
+                    <img src="assets/icon-twitter.png" alt="Twitter profile">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="assets/icon-medium.png" alt="Medium profile">
                 </a>
             </li>
         </ul>
@@ -60,15 +88,19 @@
     <section class="recent-works">
         <div class="recent-works-headline">
             <h3>My Recent Works</h3>
-            <hr> 
+        </div>
+        <div class="line-divisor">
+            <hr>
         </div>
         <article class="featured">
-            <img src="assets/project-featured.jpg" alt="Cover of featured project">                        
+            <img src="assets/project-featured.jpg" alt="Cover of featured project">
             <div class="wrap-featured">
                 <h3 class="card-h">Multi-Post Stories</h3>
-                <p id="featured-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                <p id="featured-p">A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    standard dummy text.</p>
                 <div class="lang">
-                    <ul>            
+                    <ul>
                         <li><button type="button">css</button></li>
                         <li><button type="button">html</button></li>
                         <li><button type="button">bootstrap</button></li>
@@ -78,19 +110,20 @@
                 <div>
                     <a class="see-project" href="#">See Project</a>
                 </div>
-            </div>                   
+            </div>
         </article>
         <article class="card1">
             <div class="wrap-card">
-            <h3 class="card-h">Profesional Art <br> Printing Data</h3>
-            <p class="card-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <div class="lang">
-                <ul>
-                    <li><button type="button">html</button></li>
-                    <li><button type="button">bootstrap</button></li>
-                    <li><button type="button">Ruby</button></li>
-                </ul>                            
-            </div>
+                <h3 class="card-h">Profesional Art <br> Printing Data</h3>
+                <p class="card-p">A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    has been the industry's standard</p>
+                <div class="lang">
+                    <ul>
+                        <li><button type="button">html</button></li>
+                        <li><button type="button">bootstrap</button></li>
+                        <li><button type="button">Ruby</button></li>
+                    </ul>
+                </div>
             </div>
             <div class="card-link">
                 <a class="see-project" href="#">See Project</a>
@@ -98,15 +131,16 @@
         </article>
         <article class="card2">
             <div class="wrap-card">
-            <h3 class="card-h">Data Dashboard <br> HealthcarePro</h3>
-            <p class="card-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <div class="lang">
-                <ul>
-                <li><button type="button">html</button></li>
-                <li><button type="button">bootstrap</button></li>
-                <li><button type="button">Ruby</button></li>
-                </ul>     
-            </div>
+                <h3 class="card-h">Data Dashboard <br> HealthcarePro</h3>
+                <p class="card-p">A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    has been the industry's standard</p>
+                <div class="lang">
+                    <ul>
+                        <li><button type="button">html</button></li>
+                        <li><button type="button">bootstrap</button></li>
+                        <li><button type="button">Ruby</button></li>
+                    </ul>
+                </div>
             </div>
             <div class="card-link">
                 <a class="see-project" href="#">See Project</a>
@@ -114,30 +148,32 @@
         </article>
         <article class="card3">
             <div class="wrap-card">
-            <h3 class="card-h">Data Dashboard <br> HealthcarePro</h3>
-            <p class="card-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <div class="lang">
-                <ul>
-                    <li><button type="button">html</button></li>
-                    <li><button type="button">bootstrap</button></li>
-                    <li><button type="button">Ruby</button></li>
-                </ul>     
+                <h3 class="card-h">Data Dashboard <br> HealthcarePro</h3>
+                <p class="card-p">A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    has been the industry's standard</p>
+                <div class="lang">
+                    <ul>
+                        <li><button type="button">html</button></li>
+                        <li><button type="button">bootstrap</button></li>
+                        <li><button type="button">Ruby</button></li>
+                    </ul>
+                </div>
             </div>
-            </div>
-            <div class="card-link" >
+            <div class="card-link">
                 <a class="see-project" href="#">See Project</a>
             </div>
-        </article>  
+        </article>
         <article class="card4">
             <div class="wrap-card">
-            <h3 class="card-h">Profesional Art <br> Printing Data</h3>
-            <p class="card-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <div class="lang">
-                <ul>
-                    <li><button type="button">html</button></li>
-                    <li><button type="button">bootstrap</button></li>
-                    <li><button type="button">Ruby</button></li>
-                </ul>     
+                <h3 class="card-h">Profesional Art <br> Printing Data</h3>
+                <p class="card-p">A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    has been the industry's standard</p>
+                <div class="lang">
+                    <ul>
+                        <li><button type="button">html</button></li>
+                        <li><button type="button">bootstrap</button></li>
+                        <li><button type="button">Ruby</button></li>
+                    </ul>
                 </div>
             </div>
             <div class="card-link">
@@ -146,72 +182,79 @@
         </article>
         <article class="card5">
             <div class="wrap-card">
-            <h3 class="card-h">Data Dashboard <br> Healthcare</h3>
-                <p class="card-p"> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <div class="lang">
-                <ul>
-                    <li><button type="button">html</button></li>
-                    <li><button type="button">bootstrap</button></li>
-                    <li><button type="button">Ruby</button></li>
-                </ul>     
-            </div>
-            </div>
-            <div class="card-link">
-            <a class="see-project" href="#">See Project</a>
-        </div>
-        </article>
-        <article class="card6">
-            <div class="wrap-card">
-            <h3 class="card-h">Data Dashboard <br> HealthcarePro</h3>
-            <p class="card-p"> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <div class="lang">
-                <ul>
-                    <li><button type="button">html</button></li>
-                    <li><button type="button">bootstrap</button></li>
-                    <li><button type="button">Ruby</button></li>
-                </ul>     
-            </div>
+                <h3 class="card-h">Data Dashboard <br> Healthcare</h3>
+                <p class="card-p"> A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    has been the industry's standard</p>
+                <div class="lang">
+                    <ul>
+                        <li><button type="button">html</button></li>
+                        <li><button type="button">bootstrap</button></li>
+                        <li><button type="button">Ruby</button></li>
+                    </ul>
+                </div>
             </div>
             <div class="card-link">
                 <a class="see-project" href="#">See Project</a>
             </div>
-        </article> 
+        </article>
+        <article class="card6">
+            <div class="wrap-card">
+                <h3 class="card-h">Data Dashboard <br> HealthcarePro</h3>
+                <p class="card-p"> A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    has been the industry's standard</p>
+                <div class="lang">
+                    <ul>
+                        <li><button type="button">html</button></li>
+                        <li><button type="button">bootstrap</button></li>
+                        <li><button type="button">Ruby</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-link">
+                <a class="see-project" href="#">See Project</a>
+            </div>
+        </article>
     </section>
     <section class="aboutme">
         <h1>About me</h1>
         <p>
-            Hello I'm a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
+            Hello I'm a software developer! I can help you build a product , feature or website. Look through some of my
+            work and experience! If you like what you see and have a project you need coded, don't hestiate to contact
+            me.
         </p>
         <div class="get-resume">
             <a class="see-project" href="#">Get my resume</a>
         </div>
     </section>
     <div class="skills">
-            <ul id="title1">
-                <li><img src="assets/square2.png" alt="diamond-shapped bullet point">&nbsp; Language &nbsp;&nbsp;&nbsp; </li>
-                <li class="items">Javascript</li>
-                <li class="items">Ruby</li>
-                <li class="items">Html</li>
-                <li class="items">CSS</li>
-            </ul>
-    
-            <ul id="title2">
-                <li><img src="assets/square1.png" alt="squared-shapped bullet point">&nbsp; Frameworks &nbsp;&nbsp;&nbsp; </li>
-                <li class="items">Bootstrap</li>
-                <li class="items">Ruby on Rails</li>
-                <li class="items">RSPec</li>
-                <li class="items">CapyBara</li>
-                <li class="items">Selenium</li>
-            </ul>
-        
-            <ul id="title3">
-                <li><img src="assets/round.png" alt="round-shapped bullet point">&nbsp; Skills &nbsp;&nbsp;&nbsp; </li>
-                <li class="items">Codekit</li>
-                <li class="items">Github</li>
-                <li class="items">Codepen</li>
-                <li class="items">Gitlab</li>
-                <li class="items">Terminal</li>
-            </ul>
-    </div> 
+        <ul id="title1">
+            <li><img src="assets/square2.png" alt="diamond-shapped bullet point">&nbsp; Language &nbsp;&nbsp;&nbsp;
+            </li>
+            <li class="items">Javascript</li>
+            <li class="items">Ruby</li>
+            <li class="items">Html</li>
+            <li class="items">CSS</li>
+        </ul>
+
+        <ul id="title2">
+            <li><img src="assets/square1.png" alt="squared-shapped bullet point">&nbsp; Frameworks &nbsp;&nbsp;&nbsp;
+            </li>
+            <li class="items">Bootstrap</li>
+            <li class="items">Ruby on Rails</li>
+            <li class="items">RSPec</li>
+            <li class="items">CapyBara</li>
+            <li class="items">Selenium</li>
+        </ul>
+
+        <ul id="title3">
+            <li><img src="assets/round.png" alt="round-shapped bullet point">&nbsp; Skills &nbsp;&nbsp;&nbsp; </li>
+            <li class="items">Codekit</li>
+            <li class="items">Github</li>
+            <li class="items">Codepen</li>
+            <li class="items">Gitlab</li>
+            <li class="items">Terminal</li>
+        </ul>
+    </div>
 </body>
+
 </html>
