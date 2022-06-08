@@ -1,50 +1,42 @@
 body {
   color: white;
   margin: 0;
+  height: 650px;
 }
 
 header {
   background-color: #3c3a39;
-  font-family:
-    "Roboto",
-    "Gill Sans",
-    "Gill Sans MT",
-    Calibri,
-    "Trebuchet MS",
-    sans-serif;
+  font-family: "Roboto", "Gill Sans", Calibri, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 18px;
-  max-height: 24px;
+  padding: 6px 24px 6px 24px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+/* hide desktop bar */
+#header-desktop {
+  display: none;
 }
 
 /* TOP NAV BAR */
 
 .logo {
-  display: flex;
-  align-self: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.menu a {
-  height: 24px;
+  height: 36px;
+  padding-top: 6px;
 }
 
 .menu-img {
   width: 24px;
   height: auto;
+  padding-top: 6px;
 }
 
 /* ------------------------ */
@@ -54,8 +46,6 @@ header {
 /* ------------------------ */
 
 .intro {
-  display: flex;
-  flex-direction: column;
   padding: 120px 24px;
   background: url("assets/illustration-header-mobile.png") no-repeat;
   background-position: right 120%;
@@ -65,61 +55,46 @@ header {
 /* intro title */
 h1 {
   color: #ff6b00;
-  font-family:
-    "Crete Round",
-    "Gill Sans",
-    "Gill Sans MT",
-    "Trebuchet MS",
-    sans-serif;
+  font-family: "Crete Round", "Gill Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
-  gap: 12px;
   margin: 0;
 }
 
 /* intro sub title */
 h2 {
   color: #fff5e1;
-  font-family: "Roboto", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
+  font-family: "Roboto", "Gill Sans", sans-serif;
   line-height: 32px;
 }
 
 /* intro text */
 .intro p {
-  font-family:
-    "Poppins",
-    "Gill Sans",
-    "Gill Sans MT",
-    "Trebuchet MS",
-    sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Poppins", "Gill Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  max-width: 566px;
 }
 
 /* social icons bar */
 ul.social-icons {
   display: flex;
-  justify-content: flex-start;
   gap: 5px;
   width: 200px;
-  height: auto;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+.social-icons li {
+  align-self: baseline;
+}
+
 .social-icons img {
   padding: 5px;
-  width: 24px;
-  height: 24px;
+  width: 50%;
+  height: auto;
 }
 
 /* ------------------------ */
@@ -130,7 +105,6 @@ ul.social-icons {
 
 /* grid to works cards */
 .recent-works {
-  background: rgb(255, 255, 255);
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -150,17 +124,7 @@ ul.social-icons {
 .recent-works-headline h3 {
   color: #091e42;
   text-align: center;
-  font-family:
-    "Crete Round",
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: "Crete Round", Roboto, "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -171,12 +135,14 @@ ul.social-icons {
 }
 
 /* divisor line */
+.line-divisor {
+  align-items: center;
+  grid-column: span 3;
+}
+
 hr {
-  border-bottom: 1px solid #212121;
-  line-height: 24px;
-  margin: 0;
-  width: 327px;
-  height: 0;
+  margin: auto;
+  width: 85%;
 }
 
 /* ------------------------ */
@@ -189,10 +155,8 @@ hr {
 article {
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
   grid-column: span 3;
   margin: 0 24px;
-  padding: 0;
 }
 
 /* mobile card wrapper */
@@ -201,7 +165,6 @@ article {
 }
 
 /* cards background images */
-:where(article img),
 .featured-card img {
   width: 100%;
 }
@@ -249,11 +212,9 @@ article {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #fff;
   margin: 0;
   padding: 94px 0 0 0;
 }
@@ -261,20 +222,12 @@ article {
 .card-p {
   font-family:
     "Inter",
-    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
-    Oxygen,
     Ubuntu,
-    Cantarell,
     "Open Sans",
-    "Helvetica Neue",
     sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
-  color: white;
   margin: 0;
   padding: 12px 0;
 }
@@ -282,10 +235,7 @@ article {
 /* languages buttons */
 .lang ul {
   display: flex;
-  flex-direction: row;
-  width: auto;
   height: 40px;
-  font-size: 17px;
   gap: 12px;
   margin: 0;
   padding: 12px 0;
@@ -297,14 +247,10 @@ button {
   padding: 10px 12px;
   font-family:
     "Inter",
-    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
-    Oxygen,
     Ubuntu,
-    Cantarell,
     "Open Sans",
-    "Helvetica Neue",
     sans-serif;
   font-size: 15px;
   color: white;
@@ -320,25 +266,18 @@ div .see-project {
   background: #ff6b00;
   display: inline-block;
   text-align: center;
-  align-items: center;
-  justify-content: center;
   font-family:
     "Inter",
-    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
-    Oxygen,
     Ubuntu,
-    Cantarell,
     "Open Sans",
-    "Helvetica Neue",
     sans-serif;
   font-size: 17px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: white;
-  max-height: 48px;
   padding: 12px;
 }
 
@@ -368,9 +307,6 @@ article.featured {
   color: #091e42;
   display: flex;
   flex-direction: column;
-  padding: 0;
-  height: auto;
-  width: auto;
   margin-top: 64px;
 }
 
@@ -387,14 +323,10 @@ article.featured {
 #featured-p {
   font-family:
     "Inter",
-    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
-    Oxygen,
     Ubuntu,
-    Cantarell,
     "Open Sans",
-    "Helvetica Neue",
     sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -422,7 +354,6 @@ article.featured {
   padding: 120px 24px 0;
   background: url("assets/illustration-about-me-mobile.png") no-repeat;
   background-position: right bottom;
-  justify-content: center;
   background-color: #1c1a19;
   color: #f4f5f7;
 }
@@ -431,71 +362,49 @@ article.featured {
   font-size: 72px;
   line-height: 88px;
   letter-spacing: 0.37px;
-  text-align: center;
 }
 
 .aboutme p {
   font-family:
     "Inter",
-    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
-    Oxygen,
     Ubuntu,
-    Cantarell,
     "Open Sans",
-    "Helvetica Neue",
     sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   padding-bottom: 12px;
-  max-width: 566px;
 }
 
 /* get resume button */
 .get-resume {
-  border-bottom: 1px solid white; /* divisor line */
+  border-bottom: 1px solid white;
+
+  /* divisor line */
   padding-bottom: 209px;
 }
 
 /* grid for skills list */
 .skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
   padding: 120px 0;
   background: #1c1a19;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 /* skills box */
 .skills ul {
-  grid-column: span 3;
   list-style-type: none;
   margin: 0;
   padding: 0 24px;
   font-family:
     "Inter",
-    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
-    Oxygen,
     Ubuntu,
-    Cantarell,
     "Open Sans",
-    "Helvetica Neue",
     sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  align-items: center;
-  color: #fff;
-  justify-content: center;
   text-align: center;
 }
 
@@ -508,4 +417,705 @@ article.featured {
 .items {
   font-weight: 400;
   font-size: 22px;
+}
+
+/* ************************ */
+
+/* CONTACT ME - SECTION */
+.contact-me {
+  align-items: center;
+  margin: 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me h3 {
+  font-family:
+    "Inter",
+    "Segoe UI",
+    Roboto,
+    Ubuntu,
+    "Open Sans",
+    sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: center;
+  margin: 120px 0 70px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.form input,
+textarea {
+  font-family:
+    'Inter',
+    "Segoe UI",
+    Roboto,
+    Ubuntu,
+    "Open Sans",
+    sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#name,
+#email {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 14px 16px;
+}
+
+#email {
+  margin: 24px 0;
+}
+
+textarea {
+  box-sizing: border-box;
+  background-color: #fbf8f7;
+  border: 0;
+  height: 140px;
+  width: 100%;
+  padding: 16px;
+}
+
+#submit {
+  margin: 24px 0 124px 0;
+  padding: 12px;
+  background-color: #ff6b00;
+  color: white;
+  border: 0;
+  font-family:
+    "Inter",
+    "Segoe UI",
+    Roboto,
+    Ubuntu,
+    "Open Sans",
+    sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer ul {
+  padding: 0 20%;
+  width: auto;
+}
+
+footer .social-icons img {
+  margin: 24px 0 16px;
+  width: auto;
+}
+
+footer hr {
+  background-color: #0d151e;
+  width: 134px;
+  height: 5px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+
+/* ----------------- */
+
+/* RESPONSIVENESS */
+
+/* mobile landscape */
+@media screen and (min-width: 675px) and (max-width: 939px) {
+  .intro {
+    background: url("assets/Illustration-header2.png") no-repeat;
+    background-position: right;
+    background-size: 38%;
+    background-color: #1c1a19;
+    padding: 80px 0 80px 40px;
+    margin-top: 55px;
+  }
+
+  .intro h2 {
+    margin: 0;
+    padding: 24px 0;
+    font-size: 18px;
+  }
+
+  .intro p {
+    margin: 0;
+    padding: 0 0 24px;
+    width: 380px;
+  }
+
+  .intro ul {
+    float: left;
+  }
+
+  .recent-works .recent-works-headline {
+    grid-column: span 6;
+  }
+
+  .recent-works {
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  article {
+    grid-column: span 3;
+    width: 100%;
+    margin: 0;
+  }
+
+  article.featured {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    flex-direction: row;
+    padding: 0;
+    gap: 24px;
+    color: #091e42;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .featured img {
+    grid-column: span 2;
+  }
+
+  .wrap-featured {
+    grid-column: span 2;
+    padding: 0;
+  }
+
+  article a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutme {
+    margin-top: 80px;
+    padding: 80px 0 0 40px;
+    background: url("assets/illustration-about-me.png") no-repeat;
+    background-position: right;
+    background-size: 42%;
+    background-color: #1c1a19;
+  }
+
+  .aboutme h1 {
+    text-align: left;
+  }
+
+  .aboutme p {
+    width: 344px;
+    padding: 0 0 28px 0;
+  }
+
+  .get-resume {
+    padding-bottom: 60px;
+    margin-right: 60px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 80px 60px;
+  }
+
+  .skills ul {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    padding: 0;
+  }
+
+  .skills li {
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .skills li:nth-child(2) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(3) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(4) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(5) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(6) {
+    text-align: left;
+    padding-left: 46px;
+  }
+}
+
+/* ----------------- */
+
+/* medium screens  */
+
+@media screen and (min-width: 940px) and (max-width: 1199px) {
+  header {
+    padding: 10px 141px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  #header-mobile {
+    display: none;
+  }
+
+  #header-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+  }
+
+  .logo {
+    height: 52px;
+  }
+
+  nav {
+    width: 280px;
+  }
+
+  .desktop-nav {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .email-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .desktop-nav-links {
+    text-decoration: inherit;
+    color: inherit;
+  }
+
+  /* intro */
+  .intro {
+    background: url("assets/Illustration-header2.png") no-repeat;
+    background-position: right;
+    background-size: 32%;
+    background-color: #1c1a19;
+    padding: 100px 0 100px 60px;
+    margin-top: 72px;
+  }
+
+  .intro h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .intro h2 {
+    font-size: 32px;
+    line-height: 44px;
+    color: white;
+    margin: 0;
+    padding: 24px 0;
+  }
+
+  .intro p {
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+    margin: 0;
+    max-width: 530px;
+  }
+
+  /* RECENT WORKS SECTION */
+  .recent-works {
+    margin: 0 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .recent-works-headline {
+    grid-column: 1 / span 3;
+    align-items: flex-start;
+  }
+
+  .recent-works-headline h3 {
+    margin: 60px 0 60px 10px;
+    padding: 0;
+  }
+
+  .line-divisor {
+    grid-column: 4 /span 2;
+    padding-top: 160px;
+    border-bottom: #091e42;
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* cards */
+  article {
+    grid-column: span 3;
+    width: 100%;
+    margin: 0;
+  }
+
+  .wrap-card p {
+    max-width: 345px;
+  }
+
+  article.featured {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    padding: 0;
+    gap: 24px;
+    color: #091e42;
+    margin-top: 30px;
+  }
+
+  .featured p {
+    max-width: 345px;
+  }
+
+  .wrap-featured {
+    padding-top: 0;
+  }
+
+  /* ABOUT ME PAGE */
+  .aboutme {
+    padding: 130px 142px 0 60px;
+    background: url("assets/illustration-about-me.png") no-repeat;
+    background-position: right;
+    background-size: 38%;
+    background-color: #1c1a19;
+  }
+
+  .aboutme h1 {
+    text-align: left;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .aboutme p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
+    padding: 0 0 48px 0;
+  }
+
+  .get-resume {
+    padding-bottom: 139px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 146px 141px;
+  }
+
+  .skills ul {
+    padding: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .skills li {
+    text-align: left;
+    padding: 12px 0;
+  }
+}
+
+/* ----------------- */
+
+/* bigger desktop screens  */
+
+@media screen and (min-width: 1200px) {
+  header {
+    padding: 10px 141px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  #header-mobile {
+    display: none;
+  }
+
+  #header-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 52px;
+  }
+
+  nav {
+    width: 280px;
+  }
+
+  .desktop-nav {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .email-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .desktop-nav-links {
+    text-decoration: inherit;
+    color: inherit;
+  }
+
+  /* ***************************/
+
+  /* INTRO SECTION */
+  .intro {
+    background: url("assets/Illustration-header2.png") no-repeat;
+    background-position: right;
+    background-size: 45%;
+    background-color: #1c1a19;
+    margin-top: 72px;
+    padding: 192px 0 231px 36px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  ul.social-icons {
+    display: block;
+    align-self: center;
+    text-align: center;
+    padding-right: 76px;
+    width: max-content;
+  }
+
+  .social-icons li {
+    max-width: max-content;
+  }
+
+  .social-icons img {
+    width: 21px;
+  }
+
+  .intro h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .intro h2 {
+    font-size: 32px;
+    line-height: 44px;
+    color: white;
+    margin: 0;
+    padding: 24px 0;
+  }
+
+  .intro p {
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+    margin: 0;
+    max-width: 566px;
+  }
+
+  /* RECENT WORKS SECTION */
+
+  /*************************   */
+  .recent-works {
+    margin: 0 7%;
+  }
+
+  .recent-works-headline {
+    grid-column: 1;
+  }
+
+  .recent-works-headline h3 {
+    text-align: left;
+  }
+
+  .line-divisor {
+    grid-column: 2 /span 2;
+    padding-top: 160px;
+    border-bottom: #091e42;
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* cards */
+  article {
+    grid-column: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  article.featured {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    padding: 0;
+    gap: 24px;
+    color: #091e42;
+  }
+
+  .wrap-featured {
+    padding-top: 0;
+  }
+
+  /* -------------------- */
+
+  /* ABOUT ME PAGE */
+  .aboutme {
+    padding: 130px 142px 0 130px;
+    background: url("assets/illustration-about-me.png") no-repeat;
+    background-position: right;
+    background-size: 38%;
+    background-color: #1c1a19;
+  }
+
+  .aboutme h1 {
+    text-align: left;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .aboutme p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
+    padding: 0 0 48px 0;
+  }
+
+  .get-resume {
+    padding-bottom: 139px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 146px 141px;
+  }
+
+  .skills ul {
+    padding: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .skills li {
+    text-align: left;
+    padding: 12px 0;
+  }
+
+  /*******************   */
+
+  /* CONTACT ME -SECTION */
+  .contact-me {
+    flex-direction: row;
+    gap: 32px;
+    padding: 130px 142px 154px 135px;
+    align-items: center;
+  }
+
+  .contact-me h3 {
+    align-self: flex-start;
+    text-align: left;
+    max-width: 415px;
+    margin: 0;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact-me br {
+    display: none;
+    margin: 0;
+  }
+
+  .form {
+    align-items: flex-start;
+    border: 0;
+  }
+
+  input[type=text],
+  input[type=email] {
+    padding: 14px 16px;
+  }
+
+  .contact-me textarea {
+    height: 114px;
+  }
+
+  #submit {
+    margin: 24px 0 0;
+  }
+
+  /* footer {} */
+
+  .footer ul {
+    display: flex;
+    border-top: 1px solid #dfe1e6;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  footer hr {
+    display: none;
+  }
 }
