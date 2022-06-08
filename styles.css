@@ -468,8 +468,8 @@ textarea {
   line-height: 24px;
 }
 
-input[type=text],
-input[type=email] {
+#name,
+#email {
   box-sizing: border-box;
   width: 100%;
   border: 0;
@@ -491,8 +491,7 @@ textarea {
 }
 
 #submit {
-  margin: 24px 0 124px;
-  border-bottom: 1px solid #dfe1e6;
+  margin: 24px 0 124px 0;
   padding: 12px;
   background-color: #ff6b00;
   color: white;
@@ -504,10 +503,8 @@ textarea {
     Ubuntu,
     "Open Sans",
     sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
 }
 
 footer {
@@ -1036,8 +1033,6 @@ footer hr {
     font-size: 20px;
     line-height: 32px;
     width: 566px;
-
-    /* max-width: 566px; */
     padding: 0 0 48px 0;
   }
 
@@ -1065,6 +1060,9 @@ footer hr {
     padding: 12px 0;
   }
 
+  /*******************   */
+
+  /* CONTACT ME -SECTION */
   .contact-me {
     flex-direction: row;
     gap: 32px;
