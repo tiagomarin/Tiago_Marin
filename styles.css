@@ -274,6 +274,7 @@ div .see-project {
     "Open Sans",
     sans-serif;
   font-size: 17px;
+  line-height: 24px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -997,14 +998,23 @@ footer hr {
   /* cards */
   article {
     grid-column: auto;
-    margin: 0;
+    display: flex;
+    margin: auto 0 0 0;
     padding: 0;
+    height: 435px;
   }
 
+  .wrap-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: flex-end;
+  }
+
+  /* featured card */
   article.featured {
     grid-column: span 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     flex-direction: row;
     padding: 0;
     gap: 24px;
@@ -1015,6 +1025,20 @@ footer hr {
     padding-top: 0;
   }
 
+  .featured .card-h {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  #featured-p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .card-link {
+    display: none;
+  }
+
   /* -------------------- */
 
   /* ABOUT ME PAGE */
@@ -1022,7 +1046,7 @@ footer hr {
     padding: 130px 142px 0 130px;
     background: url("assets/illustration-about-me.png") no-repeat;
     background-position: right;
-    background-size: 38%;
+    background-size: 40%;
     background-color: #1c1a19;
   }
 
@@ -1030,37 +1054,43 @@ footer hr {
     text-align: left;
     font-size: 72px;
     line-height: 82px;
+    color: #f55800;
   }
 
   .aboutme p {
     font-size: 20px;
     line-height: 32px;
     width: 566px;
-    padding: 0 0 48px 0;
+    padding: 18px 0 48px 0;
+    margin: 0;
   }
 
   .get-resume {
     padding-bottom: 139px;
   }
 
+  div .see-project {
+    background: #f55800;
+  }
+
   .skills {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
-    padding: 146px 141px;
+    gap: 210px;
+    padding: 130px 141px;
   }
 
   .skills ul {
     padding: 0;
     font-weight: 700;
     font-size: 32px;
-    line-height: 44px;
   }
 
   .skills li {
     text-align: left;
     padding: 12px 0;
+    line-height: 24px;
   }
 
   /*******************   */
