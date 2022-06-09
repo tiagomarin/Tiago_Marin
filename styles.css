@@ -316,10 +316,12 @@ button {
   border: 1px solid #f55800;
 }
 
+.small-button :active,
 .card-link :active {
   background: #e05304;
 }
 
+.small-button :disabled,
 .card-link :disabled {
   color: #5b5957;
   background: #f4f1f0;
@@ -537,8 +539,7 @@ footer {
 }
 
 .footer ul {
-  padding: 0 20%;
-  width: auto;
+  padding: 0 30%;
 }
 
 footer .social-icons img {
