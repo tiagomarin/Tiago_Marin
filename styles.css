@@ -259,10 +259,11 @@ button {
 
 /* ************************* */
 
-/* ************************* */
+/* Small button - feat. see project & resume & submit */
 
-/* See Project small button */
-div .see-project {
+.small-button a,
+.small-button input,
+.small-button .submit {
   background: #ff6b00;
   display: inline-block;
   text-align: center;
@@ -288,10 +289,40 @@ div .see-project {
   flex-direction: column;
 }
 
-article a .see-project {
-  margin: 0 12px;
-  width: 124px;
-  display: block;
+.see-project {
+  background: #ff6b00;
+  display: inline-block;
+  text-align: center;
+  font-family:
+    "Inter",
+    "Segoe UI",
+    Roboto,
+    Ubuntu,
+    "Open Sans",
+    sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+}
+
+.small-button :hover,
+.card-link :hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.card-link :active {
+  background: #e05304;
+}
+
+.card-link :disabled {
+  color: #5b5957;
+  background: #f4f1f0;
 }
 
 /* ************************* */
@@ -338,7 +369,7 @@ article.featured {
 }
 
 /* featured languages buttons */
-.featured button {
+.featured .lang button {
   background: #fff;
   border: 1px solid #8993a4;
   color: #091e42;
@@ -493,19 +524,10 @@ textarea {
 
 #submit {
   margin: 24px 0 124px 0;
-  padding: 12px;
-  background-color: #ff6b00;
-  color: white;
   border: 0;
-  font-family:
-    "Inter",
-    "Segoe UI",
-    Roboto,
-    Ubuntu,
-    "Open Sans",
-    sans-serif;
-  font-weight: 700;
   font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 footer {
@@ -900,7 +922,7 @@ footer hr {
     list-style-type: none;
   }
 
-  div .see-project {
+  .small-button a {
     font-size: 11px;
     line-height: 16px;
     padding: 8px;
@@ -972,7 +994,7 @@ footer hr {
   .contact-me {
     flex-direction: row;
     gap: 12px;
-    padding: 70px 10% 80px 10%;
+    padding: 60px 10% 60px 10%;
     align-items: center;
   }
 
@@ -1019,6 +1041,11 @@ footer hr {
   #submit {
     margin: 18px 0 0;
     font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .small-button .submit {
+    padding: 0;
   }
 
   /* footer  */
@@ -1247,7 +1274,7 @@ footer hr {
     padding-bottom: 139px;
   }
 
-  div .see-project {
+  .see-project {
     background: #f55800;
   }
 
@@ -1255,8 +1282,9 @@ footer hr {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 210px;
+    gap: 160px;
     padding: 130px 141px;
+    justify-content: center;
   }
 
   .skills ul {
@@ -1266,6 +1294,7 @@ footer hr {
   }
 
   .skills li {
+    min-width: 225px;
     text-align: left;
     padding: 12px 0;
     line-height: 24px;
