@@ -506,9 +506,6 @@ textarea {
     sans-serif;
   font-weight: 700;
   font-size: 17px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
 footer {
@@ -540,7 +537,8 @@ footer hr {
 /* RESPONSIVENESS */
 
 /* mobile landscape */
-@media screen and (min-width: 675px) and (max-width: 939px) {
+
+@media screen and (min-width: 675px) and (max-width: 767px) {
   .intro {
     background: url("assets/Illustration-header2.png") no-repeat;
     background-position: right;
@@ -678,20 +676,39 @@ footer hr {
     text-align: left;
     padding-left: 46px;
   }
+
+  .contact-me {
+    margin: 0 10% 0 10%;
+  }
+
+  .contact-me br {
+    display: none;
+  }
+
+  .contact-me h3 {
+    max-width: 450px;
+  }
+
+  #submit {
+    margin-bottom: 60px;
+  }
+
+  .footer hr {
+    display: none;
+  }
 }
 
 /* ----------------- */
 
 /* medium screens  */
 
-@media screen and (min-width: 940px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   header {
-    padding: 10px 141px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
     line-height: 20px;
+    padding: 6px 10% 6px 10%;
   }
 
   #header-mobile {
@@ -700,30 +717,27 @@ footer hr {
 
   #header-desktop {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 60px;
   }
 
   .logo {
-    height: 52px;
-  }
-
-  nav {
-    width: 280px;
+    height: 40px;
+    padding: 0;
   }
 
   .desktop-nav {
+    font-size: 10px;
     display: flex;
     list-style-type: none;
     gap: 32px;
     align-items: center;
     margin: 0;
     padding: 0;
+    align-self: flex-end;
   }
 
   .email-icon {
-    width: 24px !important;
-    height: 24px !important;
+    width: 16px;
+    height: 16px;
   }
 
   .desktop-nav-links {
@@ -735,53 +749,71 @@ footer hr {
   .intro {
     background: url("assets/Illustration-header2.png") no-repeat;
     background-position: right;
-    background-size: 32%;
+    background-size: 45%;
     background-color: #1c1a19;
-    padding: 100px 0 100px 60px;
-    margin-top: 72px;
+    margin-top: 52px;
+    padding: 60px 0 100px 4%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  ul.social-icons {
+    display: block;
+    align-self: center;
+    text-align: center;
+    padding-right: 4%;
+    width: max-content;
+  }
+
+  .social-icons li {
+    max-width: max-content;
+  }
+
+  .social-icons img {
+    width: 12px;
   }
 
   .intro h1 {
-    font-size: 72px;
-    line-height: 82px;
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .intro h2 {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 18px;
+    line-height: 26px;
     color: white;
     margin: 0;
-    padding: 24px 0;
+    padding: 10px 0;
   }
 
   .intro p {
-    font-size: 20px;
-    line-height: 32px;
-    color: white;
+    font-size: 13px;
+    line-height: 20px;
     margin: 0;
-    max-width: 530px;
+    max-width: 305px;
   }
 
   /* RECENT WORKS SECTION */
+
   .recent-works {
-    margin: 0 2%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 10%;
+    gap: 18px;
   }
 
   .recent-works-headline {
-    grid-column: 1 / span 3;
-    align-items: flex-start;
+    grid-column: 1;
   }
 
   .recent-works-headline h3 {
-    margin: 60px 0 60px 10px;
-    padding: 0;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 60px;
   }
 
   .line-divisor {
-    grid-column: 4 /span 2;
-    padding-top: 160px;
+    grid-column: 2 /span 2;
+    padding-top: 102px;
     border-bottom: #091e42;
     width: 100%;
   }
@@ -792,58 +824,119 @@ footer hr {
 
   /* cards */
   article {
-    grid-column: span 3;
-    width: 100%;
-    margin: 0;
+    grid-column: auto;
+    display: flex;
+    margin: auto 0 0 0;
+    padding: 0;
   }
 
-  .wrap-card p {
-    max-width: 345px;
+  .wrap-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: flex-end;
+    margin: 10px;
   }
 
+  .card-h {
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 60px;
+  }
+
+  .card-p {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  /* featured card */
   article.featured {
-    grid-column: span 6;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-column: span 3;
     flex-direction: row;
     padding: 0;
-    gap: 24px;
+    gap: 2%;
     color: #091e42;
-    margin-top: 30px;
+    margin-top: 0;
   }
 
-  .featured p {
-    max-width: 345px;
+  article.featured img {
+    gap: 18px;
+    width: 58%;
   }
 
   .wrap-featured {
+    grid-column: 2;
     padding-top: 0;
   }
 
+  .featured .card-h {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  #featured-p {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    padding: 0;
+  }
+
+  .card-link {
+    display: none;
+  }
+
+  button {
+    padding: 4px 6px;
+    font-size: 10px;
+  }
+
+  .lang ul {
+    height: 20px;
+    gap: 5px;
+    margin: 0;
+    padding: 5px 0;
+    list-style-type: none;
+  }
+
+  div .see-project {
+    font-size: 11px;
+    line-height: 16px;
+    padding: 8px;
+    margin-top: 10px;
+  }
+
+  /* ************************* */
+
+
+
   /* ABOUT ME PAGE */
   .aboutme {
-    padding: 130px 142px 0 60px;
+    padding: 80px 96px 0 10%;
     background: url("assets/illustration-about-me.png") no-repeat;
     background-position: right;
-    background-size: 38%;
+    background-size: 45%;
     background-color: #1c1a19;
+    margin-top: 60px;
+    border: 0;
   }
 
   .aboutme h1 {
     text-align: left;
-    font-size: 72px;
-    line-height: 82px;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .aboutme p {
-    font-size: 20px;
-    line-height: 32px;
-    width: 566px;
-    padding: 0 0 48px 0;
+    font-size: 12px;
+    line-height: 18px;
+    width: 280px;
+    padding: 0 0 10px 0;
   }
 
   .get-resume {
-    padding-bottom: 139px;
+    padding-bottom: 90px;
   }
 
   .skills {
@@ -851,19 +944,101 @@ footer hr {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 146px 141px;
+    padding: 80px 150px 80px 10%;
   }
 
   .skills ul {
+    font-size: 18px;
     padding: 0;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
+    line-height: 24px;
   }
 
   .skills li {
+    /* padding: 0; */
     text-align: left;
     padding: 12px 0;
+    line-height: 24px;
+  }
+
+  .skills li img {
+    width: 12px;
+  }
+
+  li.items {
+    /* padding: 0; */
+    font-size: 12px;
+    padding: 5px 0 5px 20px;
+  }
+
+  /* CONTACT ME -SECTION */
+  .contact-me {
+    flex-direction: row;
+    gap: 12px;
+    padding: 70px 10% 80px 10%;
+    align-items: center;
+  }
+
+  .contact-me h3 {
+    align-self: flex-start;
+    text-align: left;
+    max-width: 226px;
+    margin: 0;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .contact-me br {
+    display: none;
+    margin: 0;
+  }
+
+  .form {
+    align-items: flex-start;
+    border: 0;
+  }
+
+  .form input {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  #name,
+  #email {
+    padding: 8px 10px;
+  }
+
+  #email {
+    margin: 14px 0;
+  }
+
+  .contact-me textarea {
+    height: 60px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 10px;
+  }
+
+  #submit {
+    margin: 18px 0 0;
+    font-size: 12px;
+  }
+
+  /* footer  */
+
+  .footer ul {
+    display: flex;
+    border-top: 1px solid #dfe1e6;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  footer hr {
+    display: none;
+  }
+
+  .footer li img {
+    height: 16px;
   }
 }
 
@@ -920,6 +1095,7 @@ footer hr {
   /* ***************************/
 
   /* INTRO SECTION */
+
   .intro {
     background: url("assets/Illustration-header2.png") no-repeat;
     background-position: right;
@@ -972,6 +1148,7 @@ footer hr {
   /* RECENT WORKS SECTION */
 
   /*************************   */
+
   .recent-works {
     margin: 0 7%;
   }
@@ -996,6 +1173,7 @@ footer hr {
   }
 
   /* cards */
+
   article {
     grid-column: auto;
     display: flex;
@@ -1013,6 +1191,7 @@ footer hr {
   }
 
   /* featured card */
+
   article.featured {
     grid-column: span 3;
     flex-direction: row;
@@ -1042,6 +1221,7 @@ footer hr {
   /* -------------------- */
 
   /* ABOUT ME PAGE */
+
   .aboutme {
     padding: 130px 142px 0 130px;
     background: url("assets/illustration-about-me.png") no-repeat;
@@ -1096,6 +1276,7 @@ footer hr {
   /*******************   */
 
   /* CONTACT ME -SECTION */
+
   .contact-me {
     flex-direction: row;
     gap: 32px;
@@ -1135,8 +1316,7 @@ footer hr {
     margin: 24px 0 0;
   }
 
-  /* footer {} */
-
+  /* footer */
   .footer ul {
     display: flex;
     border-top: 1px solid #dfe1e6;
