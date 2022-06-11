@@ -194,9 +194,11 @@ article {
 
 .card1 {
   background-image:
-    linear-gradient(180.45deg,
+    linear-gradient(
+      180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%),
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
     url("assets/project1-web.jpg");
 }
 
@@ -282,13 +284,13 @@ button {
   transition: all 5s ease-out;
 }
 
-.lang :hover {
+/* .lang :hover {
   transform: scale(1.07);
-  background-color: #f55800;
-}
+} */
 
 .lang li :hover {
-  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.45);
 }
 
 /* ************************* */
@@ -315,6 +317,7 @@ button {
   text-decoration: none;
   color: white;
   padding: 12px;
+  border: 1px solid #ff6b00 !important;
 }
 
 /* See Project mobile large button */
@@ -347,7 +350,7 @@ button {
 .card-link :hover {
   color: #f55800;
   background: #fff5e1;
-  border: 1px solid #f55800;
+  border: 1px solid #f55800 !important;
 }
 
 .small-button :active,
@@ -596,7 +599,6 @@ footer hr {
 /* mobile landscape */
 
 @media screen and (min-width: 675px) and (max-width: 767px) {
-
   .intro {
     background: url("assets/Illustration-header2.png") no-repeat;
     background-position: right;
@@ -836,7 +838,6 @@ footer hr {
   .social-icons :hover {
     transform: scale(1.2);
   }
-
 
   .intro h1 {
     font-size: 36px;
@@ -1189,6 +1190,11 @@ footer hr {
 
   .social-icons img {
     width: 21px;
+    transition: transform 0.5s ease-out;
+  }
+
+  .social-icons :hover {
+    transform: scale(1.2);
   }
 
   .intro h1 {
