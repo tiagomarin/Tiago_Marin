@@ -806,7 +806,12 @@ footer hr {
 
   .social-icons img {
     width: 12px;
+   transition: transform 0.5s ease-out;
   }
+  .social-icons :hover {
+    transform: scale(1.2);
+  }
+
 
   .intro h1 {
     font-size: 36px;
