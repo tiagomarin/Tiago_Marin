@@ -30,18 +30,33 @@ header {
 
 .logo {
   height: 36px;
-  padding-top: 6px;
-  animation: rotate-pulse  0.5s ease-out 0.2s ;
-  
+  animation: rotate 0.3s, pulse 0.8s cubic-bezier(0.49, -1.29, 0.46, 2.3) 0.35s;
 }
-@keyframes rotate-pulse{
-  0%{
-   transform:scale(1) ; 
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  100%{
-    transform: scale(0.8);
+
+  100% {
+    transform: rotate(360deg);
   }
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.85);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .menu-img {
   width: 24px;
   height: auto;
@@ -582,6 +597,7 @@ footer hr {
 /* mobile landscape */
 
 @media screen and (min-width: 675px) and (max-width: 767px) {
+
   .intro {
     background: url("assets/Illustration-header2.png") no-repeat;
     background-position: right;
@@ -815,8 +831,9 @@ footer hr {
 
   .social-icons img {
     width: 12px;
-   transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
   }
+
   .social-icons :hover {
     transform: scale(1.2);
   }
