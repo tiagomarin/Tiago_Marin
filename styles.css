@@ -13,7 +13,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 6px 24px 6px 24px;
+  padding: 12px 24px 6px 24px;
   align-items: center;
   position: fixed;
   top: 0;
@@ -60,7 +60,6 @@ header {
 .menu-img {
   width: 24px;
   height: auto;
-  padding-top: 6px;
 }
 
 /* ------------------------ */
