@@ -31,8 +31,17 @@ header {
 .logo {
   height: 36px;
   padding-top: 6px;
+  animation: rotate-pulse  0.5s ease-out 0.2s ;
+  
 }
-
+@keyframes rotate-pulse{
+  0%{
+   transform:scale(1) ; 
+  }
+  100%{
+    transform: scale(0.8);
+  }
+}
 .menu-img {
   width: 24px;
   height: auto;
