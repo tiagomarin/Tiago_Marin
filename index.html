@@ -18,36 +18,39 @@
 </head>
 
 <body>
-    <header id="header-mobile">
-        <a href="#">
-            <img class="logo" src="assets/logo-no-back1.png" alt="logo, go to home">
-        </a>
-        <nav class="menu">
-            <a href="#" target="_blank">
-                <img class="menu-img" src="assets/icon-menu.png" alt="Menu Button">
+    <header>
+        <div id="header-mobile">
+            <a href="#">
+                <img class="logo" src="assets/logo-no-back1.png" alt="logo, go to home">
             </a>
-        </nav>
-    </header>
-    <header id=header-desktop>
-        <img class="logo" src="assets/logo-no-back1.png" alt="logo, go to home">
-        <nav>
-            <ul class="desktop-nav">
-                <li>
-                    <a class="desktop-nav-links" href="#" target="_blank">Portfolio</a>
-                </li>
-                <li>
-                    <a class="desktop-nav-links" href="#" target="_blank">About</a>
-                </li>
-                <li>
-                    <a class="desktop-nav-links" href="#" target="_blank">Contact</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img class="email-icon" src="./assets/icon-mail.png" alt="email contact">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="menu">
+                <a href="#" target="_blank">
+                    <img class="menu-img" src="assets/icon-menu.png" alt="Menu Button">
+                </a>
+            </nav>
+        </div>
+        <div id=header-desktop>
+            <img class="logo" src="assets/logo-no-back1.png" alt="logo, go to home">
+            <nav>
+                <ul class="desktop-nav">
+                    <li>
+                        <a class="desktop-nav-links" href="#recent-works">Recent Works</a>
+                    </li>
+                    <li>
+                        <a class="desktop-nav-links" href="#aboutme">About</a>
+                    </li>
+                    <li>
+                        <a class="desktop-nav-links" href="#contact-me">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="email-icon" src="./assets/icon-mail.png" alt="email contact">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
     <section class="intro">
         <div class="wrap-intro">
@@ -86,7 +89,7 @@
             </li>
         </ul>
     </section>
-    <section class="recent-works">
+    <section id="recent-works">
         <div class="recent-works-headline">
             <h3>My Recent Works</h3>
         </div>
@@ -215,7 +218,7 @@
             </div>
         </article>
     </section>
-    <section class="aboutme">
+    <section id="aboutme">
         <h1>About me</h1>
         <p>
             Hello I'm a software developer! I can help you build a product , feature or website. Look through some of my
@@ -255,7 +258,7 @@
             <li class="items">Terminal</li>
         </ul>
     </div>
-    <section class="contact-me">
+    <section id="contact-me">
         <h3>I'm always <br> interested in hearing about new projects, so if you'd like to chat please get in touch.
         </h3>
         <form class="form" action="https://formspree.io/f/mrgjjnpd" method="post">

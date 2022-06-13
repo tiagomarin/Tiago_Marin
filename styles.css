@@ -1,25 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 62.5%; */
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
-  margin: 0;
-  height: 650px;
 }
 
 header {
-  background-color: #3c3a39;
   font-family: "Roboto", "Gill Sans", Calibri, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  background-color: #3c3a39;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 12px 24px 6px 24px;
   align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  width: 100vw;
 }
+
 
 /* hide desktop bar */
 #header-desktop {
@@ -27,6 +36,14 @@ header {
 }
 
 /* TOP NAV BAR */
+#header-mobile {
+  margin: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+  width: 100%;
+}
 
 .logo {
   height: 36px;
@@ -102,22 +119,20 @@ h2 {
 
 /* social icons bar */
 ul.social-icons {
+  margin-top: 22px;
   display: flex;
   gap: 5px;
-  width: 200px;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  justify-content: flex-start;
 }
 
 .social-icons li {
   align-self: baseline;
+  height: max-content;
 }
 
 .social-icons img {
-  padding: 5px;
-  width: 50%;
-  height: auto;
+  transform: scale(0.5);
 }
 
 /* ------------------------ */
@@ -127,7 +142,7 @@ ul.social-icons {
 /* ------------------------ */
 
 /* grid to works cards */
-.recent-works {
+#recent-works {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -194,11 +209,9 @@ article {
 
 .card1 {
   background-image:
-    linear-gradient(
-      180.45deg,
+    linear-gradient(180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
+      rgba(38, 38, 38, 0.9) 61.94%),
     url("assets/project1-web.jpg");
 }
 
@@ -256,12 +269,15 @@ article {
 }
 
 /* languages buttons */
+.lang {
+  padding: 12px 0;
+}
+
 .lang ul {
   display: flex;
   height: 40px;
   gap: 12px;
   margin: 0;
-  padding: 12px 0;
   list-style-type: none;
 }
 
@@ -420,7 +436,7 @@ article.featured {
 
 /* ----------------- */
 
-.aboutme {
+#aboutme {
   margin-top: 120px;
   padding: 120px 24px 0;
   background: url("assets/illustration-about-me-mobile.png") no-repeat;
@@ -429,13 +445,13 @@ article.featured {
   color: #f4f5f7;
 }
 
-.aboutme h1 {
+#aboutme h1 {
   font-size: 72px;
   line-height: 88px;
   letter-spacing: 0.37px;
 }
 
-.aboutme p {
+#aboutme p {
   font-family:
     "Inter",
     "Segoe UI",
@@ -493,14 +509,14 @@ article.featured {
 /* ************************ */
 
 /* CONTACT ME - SECTION */
-.contact-me {
+#contact-me {
   align-items: center;
   margin: 0 24px;
   display: flex;
   flex-direction: column;
 }
 
-.contact-me h3 {
+#contact-me h3 {
   font-family:
     "Inter",
     "Segoe UI",
@@ -522,7 +538,6 @@ article.featured {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #dbd8d7;
 }
 
 .form input,
@@ -569,22 +584,26 @@ textarea {
   font-weight: 700;
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border-top: 1px solid #DFE1E6;
 }
 
 .footer ul {
-  padding: 0 30%;
-}
-
-footer .social-icons img {
   margin: 24px 0 16px;
-  width: auto;
+  padding: 0 30%;
+  gap: 12px;
 }
 
-footer hr {
+.footer .social-icons img {
+  width: auto;
+  transform: scale(1);
+}
+
+.footer hr {
+  box-sizing: content-box;
   background-color: #0d151e;
   width: 134px;
   height: 5px;
@@ -624,11 +643,11 @@ footer hr {
     float: left;
   }
 
-  .recent-works .recent-works-headline {
+  #recent-works .recent-works-headline {
     grid-column: span 6;
   }
 
-  .recent-works {
+  #recent-works {
     margin: 0 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -667,7 +686,7 @@ footer hr {
     flex-direction: column;
   }
 
-  .aboutme {
+  #aboutme {
     margin-top: 80px;
     padding: 80px 0 0 40px;
     background: url("assets/illustration-about-me.png") no-repeat;
@@ -676,11 +695,11 @@ footer hr {
     background-color: #1c1a19;
   }
 
-  .aboutme h1 {
+  #aboutme h1 {
     text-align: left;
   }
 
-  .aboutme p {
+  #aboutme p {
     width: 344px;
     padding: 0 0 28px 0;
   }
@@ -737,15 +756,15 @@ footer hr {
     padding-left: 46px;
   }
 
-  .contact-me {
+  #contact-me {
     margin: 0 10% 0 10%;
   }
 
-  .contact-me br {
+  #contact-me br {
     display: none;
   }
 
-  .contact-me h3 {
+  #contact-me h3 {
     max-width: 450px;
   }
 
@@ -861,7 +880,7 @@ footer hr {
 
   /* RECENT WORKS SECTION */
 
-  .recent-works {
+  #recent-works {
     margin: 0 10%;
     gap: 18px;
   }
@@ -975,7 +994,7 @@ footer hr {
   /* ************************* */
 
   /* ABOUT ME PAGE */
-  .aboutme {
+  #aboutme {
     padding: 80px 96px 0 10%;
     background: url("assets/illustration-about-me.png") no-repeat;
     background-position: right;
@@ -985,13 +1004,13 @@ footer hr {
     border: 0;
   }
 
-  .aboutme h1 {
+  #aboutme h1 {
     text-align: left;
     font-size: 32px;
     line-height: 40px;
   }
 
-  .aboutme p {
+  #aboutme p {
     font-size: 12px;
     line-height: 18px;
     width: 280px;
@@ -1034,14 +1053,14 @@ footer hr {
   }
 
   /* CONTACT ME -SECTION */
-  .contact-me {
+  #contact-me {
     flex-direction: row;
     gap: 12px;
     padding: 60px 10% 60px 10%;
     align-items: center;
   }
 
-  .contact-me h3 {
+  #contact-me h3 {
     align-self: flex-start;
     text-align: left;
     max-width: 226px;
@@ -1050,7 +1069,7 @@ footer hr {
     line-height: 30px;
   }
 
-  .contact-me br {
+  #contact-me br {
     display: none;
     margin: 0;
   }
@@ -1074,7 +1093,7 @@ footer hr {
     margin: 14px 0;
   }
 
-  .contact-me textarea {
+  #contact-me textarea {
     height: 60px;
     font-size: 10px;
     line-height: 12px;
@@ -1222,7 +1241,7 @@ footer hr {
 
   /*************************   */
 
-  .recent-works {
+  #recent-works {
     margin: 0 7%;
   }
 
@@ -1295,7 +1314,7 @@ footer hr {
 
   /* ABOUT ME PAGE */
 
-  .aboutme {
+  #aboutme {
     padding: 130px 142px 0 130px;
     background: url("assets/illustration-about-me.png") no-repeat;
     background-position: right;
@@ -1303,14 +1322,14 @@ footer hr {
     background-color: #1c1a19;
   }
 
-  .aboutme h1 {
+  #aboutme h1 {
     text-align: left;
     font-size: 72px;
     line-height: 82px;
     color: #f55800;
   }
 
-  .aboutme p {
+  #aboutme p {
     font-size: 20px;
     line-height: 32px;
     width: 566px;
@@ -1352,14 +1371,14 @@ footer hr {
 
   /* CONTACT ME -SECTION */
 
-  .contact-me {
+  #contact-me {
     flex-direction: row;
     gap: 32px;
     padding: 130px 142px 154px 135px;
     align-items: center;
   }
 
-  .contact-me h3 {
+  #contact-me h3 {
     align-self: flex-start;
     text-align: left;
     max-width: 415px;
@@ -1368,7 +1387,7 @@ footer hr {
     line-height: 52px;
   }
 
-  .contact-me br {
+  #contact-me br {
     display: none;
     margin: 0;
   }
@@ -1383,7 +1402,7 @@ footer hr {
     padding: 14px 16px;
   }
 
-  .contact-me textarea {
+  #contact-me textarea {
     height: 114px;
   }
 
