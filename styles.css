@@ -86,6 +86,7 @@ header {
 /* ------------------------ */
 
 .intro {
+  margin-top: 60px;
   padding: 120px 24px;
   background: url("assets/illustration-header-mobile.png") no-repeat;
   background-position: right 120%;
@@ -108,6 +109,7 @@ h2 {
   color: #fff5e1;
   font-family: "Roboto", "Gill Sans", sans-serif;
   line-height: 32px;
+  margin: 12px 0;
 }
 
 /* intro text */
@@ -119,9 +121,9 @@ h2 {
 
 /* social icons bar */
 ul.social-icons {
-  margin-top: 22px;
+  margin: 22px 0 0 10px;
   display: flex;
-  gap: 5px;
+  gap: 20px;
   list-style-type: none;
   justify-content: flex-start;
 }
@@ -131,8 +133,9 @@ ul.social-icons {
   height: max-content;
 }
 
-.social-icons img {
-  transform: scale(0.5);
+.social-icons i {
+  color: #dbd8d7;
+  font-size: 20px;
 }
 
 /* ------------------------ */
@@ -187,8 +190,6 @@ hr {
 
 /* STANDARD CARDS */
 
-/* ------------------------ */
-
 /* card wrapper */
 article {
   background-repeat: no-repeat;
@@ -209,9 +210,11 @@ article {
 
 .card1 {
   background-image:
-    linear-gradient(180.45deg,
+    linear-gradient(
+      180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%),
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
     url("assets/project1-web.jpg");
 }
 
@@ -271,6 +274,7 @@ article {
 /* languages buttons */
 .lang {
   padding: 12px 0;
+  transition: all 5s ease-out;
 }
 
 .lang ul {
@@ -279,6 +283,11 @@ article {
   gap: 12px;
   margin: 0;
   list-style-type: none;
+}
+
+.lang-icons :hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.45);
 }
 
 button {
@@ -296,18 +305,7 @@ button {
   border: 0;
 }
 
-.lang {
-  transition: all 5s ease-out;
-}
 
-/* .lang :hover {
-  transform: scale(1.07);
-} */
-
-.lang li :hover {
-  transform: scale(1.1);
-  background: rgba(255, 255, 255, 0.45);
-}
 
 /* ************************* */
 
@@ -588,7 +586,7 @@ textarea {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
 }
 
 .footer ul {
@@ -597,9 +595,9 @@ textarea {
   gap: 12px;
 }
 
-.footer .social-icons img {
-  width: auto;
-  transform: scale(1);
+.footer .social-icons i {
+  color: #505f79;
+  font-size: 24px;
 }
 
 .footer hr {
@@ -618,12 +616,54 @@ textarea {
 /* mobile landscape */
 
 @media screen and (min-width: 675px) and (max-width: 767px) {
+  #header-mobile {
+    display: none;
+  }
+
+  #header-desktop {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    height: 40px;
+    padding: 0;
+  }
+
+  .desktop-nav {
+    font-size: 10px;
+    display: flex;
+    list-style-type: none;
+    gap: 18px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+  }
+
+  .email-icon {
+    transform: scale(0.3);
+    margin-top: 4px;
+  }
+
+  .desktop-nav-links {
+    text-decoration: inherit;
+    color: inherit;
+  }
+
   .intro {
     background: url("assets/Illustration-header2.png") no-repeat;
     background-position: right;
     background-size: 38%;
     background-color: #1c1a19;
-    padding: 80px 0 80px 40px;
+    padding: 60px 0 80px 40px;
     margin-top: 55px;
   }
 
@@ -643,7 +683,23 @@ textarea {
     float: left;
   }
 
+  ul.social-icons {
+    margin: 0;
+  }
+
   #recent-works .recent-works-headline {
+    grid-column: span 6;
+    margin-top: 80px;
+  }
+
+  .recent-works-headline h3 {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .line-divisor {
     grid-column: span 6;
   }
 
@@ -651,6 +707,11 @@ textarea {
     margin: 0 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .card-h {
+    font-size: 26px;
+    line-height: 32px;
   }
 
   article {
@@ -663,17 +724,18 @@ textarea {
     grid-column: span 6;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr;
-    flex-direction: row;
-    padding: 0;
     gap: 24px;
-    color: #091e42;
     align-items: center;
     margin-top: 0;
   }
 
   .featured img {
     grid-column: span 2;
+    width: 100%;
+  }
+
+  #featured-p {
+    max-width: 450px;
   }
 
   .wrap-featured {
@@ -726,7 +788,7 @@ textarea {
 
   .skills li {
     text-align: left;
-    padding: 8px 12px;
+    padding: 6px 12px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -756,6 +818,10 @@ textarea {
     padding-left: 46px;
   }
 
+  .items {
+    font-size: 16px !important;
+  }
+
   #contact-me {
     margin: 0 10% 0 10%;
   }
@@ -765,11 +831,25 @@ textarea {
   }
 
   #contact-me h3 {
-    max-width: 450px;
+    font-size: 28px;
+    line-height: 40px;
+    max-width: 380px;
+  }
+
+  .form {
+    margin-bottom: 40px;
+  }
+
+  textarea {
+    height: 100px;
   }
 
   #submit {
-    margin-bottom: 60px;
+    margin: 20px 0 0 0;
+  }
+
+  .footer ul {
+    margin: 24px 0 18px;
   }
 
   .footer hr {
@@ -782,20 +862,20 @@ textarea {
 /* medium screens  */
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  header {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 6px 10% 6px 10%;
-  }
-
   #header-mobile {
     display: none;
   }
 
   #header-desktop {
     display: flex;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0 4% 0 10%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .logo {
@@ -807,7 +887,7 @@ textarea {
     font-size: 10px;
     display: flex;
     list-style-type: none;
-    gap: 32px;
+    gap: 16px;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -815,8 +895,8 @@ textarea {
   }
 
   .email-icon {
-    width: 16px;
-    height: 16px;
+    transform: scale(0.3);
+    margin-top: 4px;
   }
 
   .desktop-nav-links {
@@ -831,26 +911,28 @@ textarea {
     background-size: 45%;
     background-color: #1c1a19;
     margin-top: 52px;
-    padding: 60px 0 100px 4%;
+    padding: 90px 0 120px 3%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
 
   ul.social-icons {
+    margin: 0;
     display: block;
     align-self: center;
     text-align: center;
-    padding-right: 4%;
+    padding-right: 5%;
     width: max-content;
   }
 
   .social-icons li {
     max-width: max-content;
+    margin: 6px 0;
   }
 
-  .social-icons img {
-    width: 12px;
+  .social-icons i {
+    font-size: 14px;
     transition: transform 0.5s ease-out;
   }
 
@@ -1014,7 +1096,7 @@ textarea {
     font-size: 12px;
     line-height: 18px;
     width: 280px;
-    padding: 0 0 10px 0;
+    padding: 24px 0 10px 0;
   }
 
   .get-resume {
@@ -1055,18 +1137,19 @@ textarea {
   /* CONTACT ME -SECTION */
   #contact-me {
     flex-direction: row;
-    gap: 12px;
-    padding: 60px 10% 60px 10%;
+    gap: 24px;
+    padding: 100px 10% 100px 10%;
     align-items: center;
+    margin: 0;
   }
 
   #contact-me h3 {
     align-self: flex-start;
     text-align: left;
-    max-width: 226px;
+    max-width: 206px;
     margin: 0;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   #contact-me br {
@@ -1124,8 +1207,8 @@ textarea {
     display: none;
   }
 
-  .footer li img {
-    height: 16px;
+  .footer .social-icons i {
+    font-size: 14px;
   }
 }
 
@@ -1134,15 +1217,6 @@ textarea {
 /* bigger desktop screens  */
 
 @media screen and (min-width: 1200px) {
-  header {
-    padding: 10px 141px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
   #header-mobile {
     display: none;
   }
@@ -1150,14 +1224,17 @@ textarea {
   #header-desktop {
     display: flex;
     justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 14px 8% 14px 10%;
+    align-items: center;
+    width: 100%;
   }
 
   .logo {
     height: 52px;
-  }
-
-  nav {
-    width: 280px;
   }
 
   .desktop-nav {
@@ -1196,19 +1273,22 @@ textarea {
   }
 
   ul.social-icons {
+    margin: 0;
     display: block;
     align-self: center;
     text-align: center;
     padding-right: 76px;
     width: max-content;
+    gap: 40px;
   }
 
   .social-icons li {
     max-width: max-content;
+    margin: 12px 0;
   }
 
-  .social-icons img {
-    width: 21px;
+  .social-icons i {
+    font-size: 24px;
     transition: transform 0.5s ease-out;
   }
 
@@ -1413,10 +1493,10 @@ textarea {
   /* footer */
   .footer ul {
     display: flex;
-    border-top: 1px solid #dfe1e6;
     width: 100%;
     padding: 0;
     justify-content: center;
+    margin: 14px 0;
   }
 
   footer hr {
