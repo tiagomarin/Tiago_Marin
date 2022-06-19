@@ -73,11 +73,43 @@ header {
   }
 }
 
-.menu-img {
+.hamburger {
   width: 24px;
   height: auto;
 }
 
+.hamburger.active {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #3c3a39;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+}
+
+.nav-links {
+  box-sizing: content-box;
+  color: #fff5e1;
+  padding: 15px;
+  border-bottom: 1px solid #6f6c6b;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration:none;
+  margin: 12px;
+
+}
 /* ------------------------ */
 
 /* 1st section - INTRO */

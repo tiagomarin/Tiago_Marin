@@ -1,4 +1,14 @@
-const seeProjectBtn = document.querySelectorAll('.see-project');
+const menuBtn = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+})
+
+
+
+/*const seeProjectBtn = document.querySelectorAll('.see-project');
 // const clsMenuBtn = document.querySelectorAll('');
 const detailsModal = document.querySelectorAll('.card1 .details');
 const body = document.body;
