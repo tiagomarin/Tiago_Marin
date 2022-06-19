@@ -1,15 +1,18 @@
 const menuBtn = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
-const clsModal = document.querySelector('#clsModal');
+const clsmodal = document.querySelector('#cls-modal');
 
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
   mobileMenu.classList.toggle("active");
 })
 
-document.querySelectorAll('nav-links').forEach(m => m.addEventListener('click', () => {
+clsmodal.addEventListener("click", () => {
+  mobileMenu.classList.remove("active")
+});
+/*document.querySelectorAll('.mobile-menu').forEach(m => m.addEventListener('click', () => {
   clsModal.classList.remove("active");
-}));
+}));*/
 
 
 /*
