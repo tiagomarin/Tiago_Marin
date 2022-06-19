@@ -9,6 +9,7 @@ menuBtn.addEventListener("click", () => {
 
 clsmodal.addEventListener("click", () => {
   mobileMenu.classList.remove("active")
+  menuBtn.classList.remove("active");
 });
 /*document.querySelectorAll('.mobile-menu').forEach(m => m.addEventListener('click', () => {
   clsModal.classList.remove("active");
