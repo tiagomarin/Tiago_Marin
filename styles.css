@@ -423,6 +423,17 @@ article.featured {
   color: #091e42;
 }
 
+.details {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+
+
+
 /* ----------------- */
 
 /* 3ND section - ABOUT ME */
