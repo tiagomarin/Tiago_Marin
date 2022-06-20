@@ -423,8 +423,25 @@ article.featured {
   color: #091e42;
 }
 
+/* details MODAL */
+/* .modal-on{
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+} */
+
 .details {
   display: none;
+  height: 92vh;
+  width: 88vw;
+  color: #e05304;
+  background-color: burlywood;
+  margin: 0;
+  position: absolute;
+  left: auto;
+  right: auto;
+}
+.details img {
+  width: 100%;
 }
 
 .display-block {
