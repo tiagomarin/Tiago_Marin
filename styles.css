@@ -84,6 +84,7 @@ header {
 
 .mobile-menu {
   display: none;
+
 }
 
 .mobile-menu.active {
@@ -108,7 +109,9 @@ header {
   line-height: 44px;
   text-decoration:none;
   margin: 12px;
-
+}
+.x-button {
+text-align: end;
 }
 /* ------------------------ */
 
