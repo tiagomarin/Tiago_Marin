@@ -14,7 +14,7 @@ const portifolio = {
     },    
     card1: {
         heading: "title of card 1",
-        highlight: "A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
+        highlight: "1 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
         image: "assets/project1-web.jpg",
         badge1: "css",
         badge2: "html",
@@ -24,7 +24,7 @@ const portifolio = {
     },
     card2: {
         heading: "title of card 2",
-        highlight: "A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
+        highlight: "2 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
         image: "assets\project2.jpg",
         badge1: "css",
         badge2: "html",
@@ -34,7 +34,7 @@ const portifolio = {
     },
     card3: {
         heading: "title of card 3",
-        highlight: "A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
+        highlight: "3 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
         image: "assets\project3.jpg",
         badge1: "css",
         badge2: "html",
@@ -44,7 +44,7 @@ const portifolio = {
     },
     card4: {
         heading: "title of card 4",
-        highlight: "A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
+        highlight: "4 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
         image: "assets\project4.jpg",
         badge1: "css",
         badge2: "html",
@@ -54,7 +54,7 @@ const portifolio = {
     }, 
     card5: {
         heading: "title of card 5",
-        highlight: "A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
+        highlight: "5 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
         image: "assets\project5.jpg",
         badge1: "css",
         badge2: "html",
@@ -64,7 +64,7 @@ const portifolio = {
     }, 
     card6: {
         heading: "title of card 6",
-        highlight: "A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
+        highlight: "6 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard",
         image: "assets\project6.jpg",
         badge1: "css",
         badge2: "html",
@@ -125,6 +125,10 @@ button.classList = 'small-button see-project';
 button.innerHTML = 'See Project';
 divWrap.appendChild(button);
 
+
+// -----------------------
+// loop to create the cards
+for ( i = 0; i <6; i++){
 //create normal cards
 article = document.createElement('article');
 article.classList = "card1";
@@ -138,7 +142,7 @@ article.appendChild(divWrap);
 // create title of card
 h3 = document.createElement('h3');
 h3.classList = 'card-h';
-h3.innerHTML = portifolio.featured.heading;
+h3.innerHTML = portifolio.card1.heading;
 divWrap.appendChild(h3);
 
 //create p
@@ -171,13 +175,14 @@ button.innerHTML = portifolio.featured.badge1;
 li.appendChild(button);
 
 
-//create the button div
+//create the button see project
 div = document.createElement('div');
 div.classList = 'card-link';
-div.innerText = 'See Project';
 divWrap.appendChild(div);
-
-
-
+let a = document.createElement('a');
+a.classList = 'see-project';
+a.innerText = 'See Project';
+div.appendChild(a);
+}
 
 
