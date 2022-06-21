@@ -124,3 +124,60 @@ button = document.createElement('button');
 button.classList = 'small-button see-project';
 button.innerHTML = 'See Project';
 divWrap.appendChild(button);
+
+//create normal cards
+article = document.createElement('article');
+article.classList = "card1";
+recentWorks.appendChild(article);
+
+//create div
+divWrap = document.createElement('div');
+divWrap.classList = "wrap-card";
+article.appendChild(divWrap);
+
+// create title of card
+h3 = document.createElement('h3');
+h3.classList = 'card-h';
+h3.innerHTML = portifolio.featured.heading;
+divWrap.appendChild(h3);
+
+//create p
+p = document.createElement('p');
+p.classList = "card-p";
+p.innerText = portifolio.card1.highlight;
+divWrap.appendChild(p);
+
+//create div
+div = document.createElement('div');
+div.classList = "lang";
+divWrap.appendChild(div);
+
+//create ul
+ul = document.createElement('ul');
+div.appendChild(ul);
+
+//create li-items
+li = document.createElement('li');
+li.classList = "lang-icons";
+ul.appendChild(li);
+
+//create badge items
+//create a for loop to create 3 of them
+li = document.createElement('li')
+li.classList ='lang-icons';
+ul.appendChild(li);
+button = document.createElement('button');
+button.innerHTML = portifolio.featured.badge1;
+li.appendChild(button);
+
+
+//create the button div
+div = document.createElement('div');
+div.classList = 'card-link';
+div.innerText = 'See Project';
+divWrap.appendChild(div);
+
+
+
+
+
