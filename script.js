@@ -11,3 +11,4 @@ clsmodal.addEventListener("click", () => {
   mobileMenu.classList.remove("active")
   menuBtn.classList.remove("active");
 });
+
