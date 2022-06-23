@@ -1,110 +1,99 @@
-//variables for menu button
-const menuBtn = document.querySelector('.hamburger');
-const mobileMenu = document.querySelector('.mobile-menu');
-const clsmodal = document.querySelector('#cls-modal');
-
-//open menu mobile
-menuBtn.addEventListener('click', () => {
-  menuBtn.classList.add('active');
-  mobileMenu.classList.add('active');
-});
-
-// close menu mobile
-clsmodal.addEventListener('click', () => {
-  mobileMenu.classList.remove('active');
-  menuBtn.classList.remove('active');
-});
-
-// open details MODAL
-const modalBtn = document.querySelector('#modalBtn');
-modalBtn.addEventListener('click', () => {
-  // clearModal();
-  fillModal(1)
-  modalContainer.classList.add('display-flex');
-});
-
-// close details MODAL
-window.addEventListener('click', (e) => {
-  if (e.target === modalContainer || e.target === seeLiveBtn || e.target === sourceBtn) {
-    modalContainer.classList.remove('display-flex');
-  }
-});
-
-// // many buttons onpen modal
-// window.addEventListener('click', (event) => {
-//   const buttonId = event.target.id;
-//   if (event.target.classList.contains('see-project')) {
-//     clearModal("details");
-//     fillDetailsModal(buttonId);
-//     newModal.classList.add('display-flex');
-//   }
-// })
-
 
 const recentWorks = document.querySelector('#recent-works');
 
 // function cardsSection (portifolio)
 const portifolio = [
   {
+    id: 0,
     heading: 'title of Featured card',
-    highlight: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    highlight: "0 A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    highlightDetails: `Highligh Featured is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five, but also the leap into electronic typesetting, remaining essent`,
     image: 'assets/project-featured.jpg',
     imageDetails: 'assets/project-featured.jpg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
     badge4: 'Ruby',
-    button: 'See project',
+    seeLive: 'https://tiago-lelinski-marin.github.io/myPortfolio/',
+    seeSrc: 'https://github.com/Tiago-Lelinski-Marin/myPortfolio',
   },
   {
+    id: 1,
     heading: 'title of card 1',
     highlight: '1 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
+    highlightDetails: `Highligh 1 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     image: 'assets/project1-web.jpg',
+    imageDetails: 'assets/project-featured.jpg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
-    badge4: 'Ruby',
+    seeLive: 'https://tiago-lelinski-marin.github.io/myPortfolio/',
+    seeSrc: 'https://github.com/Tiago-Lelinski-Marin/myPortfolio',
   },
   {
+    id: 2,
     heading: 'title of card 2',
     highlight: '2 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
+    highlightDetails: `Highligh 2 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     image: 'assets\project2.jpg',
+    imageDetails: 'assets/project-featured.jpg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
-    badge4: 'Ruby',
+    seeLive: 'https://tiago-lelinski-marin.github.io/myPortfolio/',
+    seeSrc: 'https://github.com/Tiago-Lelinski-Marin/myPortfolio',
   },
   {
+    id: 3,
     heading: 'title of card 3',
     highlight: '3 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
+    highlightDetails: `Highligh 3 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     image: 'assets\project3.jpg',
+    imageDetails: 'assets/project-featured.jpg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
+    seeLive: 'https://tiago-lelinski-marin.github.io/myPortfolio/',
+    seeSrc: 'https://github.com/Tiago-Lelinski-Marin/myPortfolio',
   },
   {
+    id: 4,
     heading: 'title of card 4',
     highlight: '4 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
+    highlightDetails: `Highligh 4 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     image: 'assets\project4.jpg',
+    imageDetails: 'assets/project-featured.jpg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
+    seeLive: 'https://tiago-lelinski-marin.github.io/myPortfolio/',
+    seeSrc: 'https://github.com/Tiago-Lelinski-Marin/myPortfolio',
   },
   {
+    id: 5,
     heading: 'title of card 5',
     highlight: '5 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
+    highlightDetails: `Highligh 5 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     image: 'assets\project5.jpg',
+    imageDetails: 'assets/project-featured.jpg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
+    seeLive: 'https://tiago-lelinski-marin.github.io/myPortfolio/',
+    seeSrc: 'https://github.com/Tiago-Lelinski-Marin/myPortfolio',
   },
   {
+    id: 6,
     heading: 'title of card 6',
     highlight: '6 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
+    highlightDetails: `Highligh 6 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     image: 'assets\project6.jpg',
+    imageDetails: 'assets/project-featured.jpg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
+    seeLive: 'https://tiago-lelinski-marin.github.io/myPortfolio/',
+    seeSrc: 'https://github.com/Tiago-Lelinski-Marin/myPortfolio',
   },
 ];
 
@@ -275,93 +264,156 @@ function clearModal(project) {
   modalContainer.removeChild(modalClear);
 }
 
-// fill modal
+// // fill modal
 function fillModal(i) {
 
-// create full screen container
-let divContModal = document.createElement('div');
-divContModal.classList = 'modal-container';
-recentWorks.appendChild(divContModal);
+  // create full screen container
+  let divContModal = document.createElement('div');
+  divContModal.classList = 'modal-container';
+  recentWorks.appendChild(divContModal);
 
-// create modal 
-let divModal = document.createElement('div');
-divModal.classList = 'details';
-divContModal.appendChild(divModal);
+  // create modal 
+  let divModal = document.createElement('div');
+  divModal.classList = 'details';
+  divContModal.appendChild(divModal);
 
-// create title of card
-h2 = document.createElement('h3');
-h2.classList = 'details-title';
-h2.innerHTML = portifolio[0].heading;
-divModal.appendChild(h2);
+  // create title of card
+  h2 = document.createElement('h3');
+  h2.classList = 'details-title';
+  h2.innerHTML = portifolio[i].heading;
+  divModal.appendChild(h2);
 
-// create div for language Badges 
-let divBadges = document.createElement('div');
-divBadges.classList = 'lang';
-divModal.appendChild(divBadges);
+  // create div for language Badges 
+  let divBadges = document.createElement('div');
+  divBadges.classList = 'lang';
+  divModal.appendChild(divBadges);
 
-// create ul
-ul = document.createElement('ul');
-divBadges.appendChild(ul);
-
-
-// create each badge items
-
-li = document.createElement('li');
-li.classList = 'lang-icons';
-ul.appendChild(li);
-div = document.createElement('div');
-div.classList = 'badge';
-div.innerHTML = portifolio[0].badge1;
-li.appendChild(div);
-
-li = document.createElement('li');
-li.classList = 'lang-icons';
-ul.appendChild(li);
-div = document.createElement('div');
-div.classList = 'badge';
-div.innerHTML = portifolio[0].badge2;
-li.appendChild(div);
-
-li = document.createElement('li');
-li.classList = 'lang-icons';
-ul.appendChild(li);
-div = document.createElement('div');
-div.classList = 'badge';
-div.innerHTML = portifolio[0].badge3;
-li.appendChild(div);
-
-// create img of card
-img = document.createElement('img');
-img.src = (portifolio[0].imageDetails);
-divModal.appendChild(img);
-
-// create p
-p = document.createElement('p');
-p.classList = 'card-p';
-p.innerText = portifolio[0].highlight;
-divModal.appendChild(p);
-
-// create div to buttons
-let divBtns = document.createElement('div');
-divBtns.classList = 'details-btns-container';
-divModal.appendChild(divBtns);
+  // create ul
+  ul = document.createElement('ul');
+  divBadges.appendChild(ul);
 
 
-// create buttons
-button = document.createElement('button');
-button.id = `see-live${0}`;
-button.classList = 'small-button see-project';
-button.innerHtml = 'See Live <i class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"></i>';
-divBtns.appendChild(button);
+  // create each badge items
+
+  li = document.createElement('li');
+  li.classList = 'lang-icons';
+  ul.appendChild(li);
+  div = document.createElement('div');
+  div.classList = 'badge';
+  div.innerHTML = portifolio[i].badge1;
+  li.appendChild(div);
+
+  li = document.createElement('li');
+  li.classList = 'lang-icons';
+  ul.appendChild(li);
+  div = document.createElement('div');
+  div.classList = 'badge';
+  div.innerHTML = portifolio[i].badge2;
+  li.appendChild(div);
+
+  li = document.createElement('li');
+  li.classList = 'lang-icons';
+  ul.appendChild(li);
+  div = document.createElement('div');
+  div.classList = 'badge';
+  div.innerHTML = portifolio[i].badge3;
+  li.appendChild(div);
+
+  // create img of card
+  img = document.createElement('img');
+  img.src = (portifolio[i].imageDetails);
+  divModal.appendChild(img);
+
+  // create p
+  p = document.createElement('p');
+  p.classList = 'card-p';
+  p.innerText = portifolio[i].highlightDetails;
+  divModal.appendChild(p);
+
+  // create div to buttons
+  let divBtns = document.createElement('div');
+  divBtns.classList = 'details-btns-container';
+  divModal.appendChild(divBtns);
 
 
-button = document.createElement('button');
-button.id = `source${0}`;
-button.classList = 'small-button see-project';
-button.innerHtml = 'See Live <i class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"></i>';
-divBtns.appendChild(button);
+  // create buttons
+  // see-live button
+  let anchor = document.createElement('a');
+  anchor.setAttribute = ('href', portifolio[i].seeLive);
+  anchor.setAttribute = ('target', '_blank');
+  divBtns.appendChild(anchor);
+
+  button = document.createElement('button');
+  button.id = `see-live${i}`;
+  button.classList = 'small-button see-project';
+  button.innerHtml = 'See Live <i class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"></i>';
+  anchor.appendChild(button);
+
+  // see source button
+  anchor = document.createElement('a');
+  anchor.setAttribute = ('href', portifolio[i].seeSrc);
+  anchor.setAttribute = ('target', '_blank');
+  divBtns.appendChild(anchor);
+
+  button = document.createElement('button');
+  button.id = `source${i}`;
+  button.classList = 'small-button see-project';
+  button.innerHtml = 'See Source <i class="fa-brands fa-github"></i>';
+  anchor.appendChild(button);
 }
+
 // variables for see-live and source buttons
 const modalContainer = document.querySelector('.modal-container');
 const seeLiveBtn = document.querySelector('#see-live');
 const sourceBtn = document.querySelector('#source');
+
+
+
+// ----------------------------
+// buttons funcionallity
+// ----------------------------
+
+//variables for menu button
+const menuBtn = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+const clsmodal = document.querySelector('#cls-modal');
+
+//open menu mobile
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.add('active');
+  mobileMenu.classList.add('active');
+});
+
+// close menu mobile
+clsmodal.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+  menuBtn.classList.remove('active');
+});
+
+// open details MODAL
+let iModal = document
+const modalBtn = document.querySelector(iModal);
+
+modalBtn.addEventListener('click', () => {
+  // clearModal();
+  // fillModal(1);
+  modalContainer.classList.add('display-flex');
+});
+
+// close details MODAL
+window.addEventListener('click', (e) => {
+  if (e.target === modalContainer || e.target === seeLiveBtn || e.target === sourceBtn) {
+    modalContainer.classList.remove('display-flex');
+  }
+});
+
+// // many buttons onpen modal
+// window.addEventListener('click', (event) => {
+//   const buttonId = event.target.id;
+//   if (event.target.classList.contains('see-project')) {
+//     clearModal("details");
+//     fillDetailsModal(buttonId);
+//     newModal.classList.add('display-flex');
+//   }
+// })
+
