@@ -253,6 +253,9 @@ for (i = 1; i < 7; i++) {
 
   div.appendChild(button);
 }
+// fim do loop
+
+
 
 // -------------------
 // create Details pop up
@@ -339,24 +342,25 @@ function fillModal(i) {
   // create buttons
   // see-live button
   let anchor = document.createElement('a');
+  anchor.id = `see-live${i}`;
   anchor.setAttribute = ('href', portifolio[i].seeLive);
   anchor.setAttribute = ('target', '_blank');
   divBtns.appendChild(anchor);
 
   button = document.createElement('button');
-  button.id = `see-live${i}`;
   button.classList = 'small-button see-project';
   button.innerHtml = 'See Live <i class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"></i>';
   anchor.appendChild(button);
 
   // see source button
   anchor = document.createElement('a');
+  anchor.id = `source${i}`;
   anchor.setAttribute = ('href', portifolio[i].seeSrc);
   anchor.setAttribute = ('target', '_blank');
   divBtns.appendChild(anchor);
 
   button = document.createElement('button');
-  button.id = `source${i}`;
+  
   button.classList = 'small-button see-project';
   button.innerHtml = 'See Source <i class="fa-brands fa-github"></i>';
   anchor.appendChild(button);
@@ -364,8 +368,8 @@ function fillModal(i) {
 
 // variables for see-live and source buttons
 const modalContainer = document.querySelector('.modal-container');
-const seeLiveBtn = document.querySelector('#see-live');
-const sourceBtn = document.querySelector('#source');
+const seeLiveBtn = document.querySelector(`#see-live${portifolio[X].seeLive}`); //fetch <a id="see-live XX "
+const sourceBtn = document.querySelector(`#source${portifolio[X].seeSrc}`); //fetch <a id="see-source XX "
 
 
 
@@ -390,8 +394,9 @@ clsmodal.addEventListener('click', () => {
   menuBtn.classList.remove('active');
 });
 
+// ------ MODAL---------
 // open details MODAL
-let iModal = document
+let iModal = document.querySelector(`#`)
 const modalBtn = document.querySelector(iModal);
 
 modalBtn.addEventListener('click', () => {
