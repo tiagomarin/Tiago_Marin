@@ -306,7 +306,7 @@ article {
   padding: 12px 0;
 }
 
-/* languages buttons */
+/* languages badges */
 .lang {
   padding: 12px 0;
   transition: all 5s ease-out;
@@ -325,7 +325,7 @@ article {
   background: rgba(255, 255, 255, 0.45);
 }
 
-button {
+.badge {
   background: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
   font-family:
@@ -455,7 +455,13 @@ article.featured {
 }
 
 /* featured languages buttons */
-.featured .lang button {
+.featured .lang .badge {
+  background: #fff;
+  border: 1px solid #8993a4;
+  color: #091e42;
+}
+
+.details .badge {
   background: #fff;
   border: 1px solid #8993a4;
   color: #091e42;
@@ -495,11 +501,12 @@ article.featured {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  background-color: rgb(154, 137, 137);
+  background-color: white;
   color: #e05304;
   width: 90%;
   position: relative;
   margin: 2% 0;
+  gap: 16px;
 }
 
 .details>* {
@@ -535,9 +542,18 @@ article.featured {
   display: block;
 }
 
-#see-live {}
+.details-btns-container {
+  display: flex;
+  gap: 16px;
+}
 
-#source {}
+#see-live {
+  padding: 12px 18px;
+}
+
+#source {
+  padding: 12px 18px;
+}
 
 /* ----------------- */
 
