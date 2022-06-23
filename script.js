@@ -12,9 +12,9 @@
 //   menuBtn.classList.remove('active');
 // });
 
-const seeProject = document.querySelector('#details2');
-const details = document.querySelector('.wrap-details');
+const modalBtn = document.querySelector('#modalBtn');
+const modalContainer = document.querySelector('.modal-container');
 
-seeProject.addEventListener('click', () => {
-  details.classList.add('display-flex');
+modalBtn.addEventListener('click', () => {
+  modalContainer.classList.add('display-flex');
 });
