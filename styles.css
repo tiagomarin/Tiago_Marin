@@ -247,11 +247,9 @@ article {
 
 .card1 {
   background-image:
-    linear-gradient(
-      180.45deg,
+    linear-gradient(180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
+      rgba(38, 38, 38, 0.9) 61.94%),
     url("assets/project1-web.jpg");
 }
 
@@ -470,10 +468,8 @@ article.featured {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 } */
 
-.wrap-details {
-  display: flex;
-
-  /* display: none; */
+.modal-container {
+  display: none;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -490,6 +486,11 @@ article.featured {
   overflow-y: auto;
 }
 
+.modal-container.display-flex {
+  display: flex;
+}
+
+
 .details {
   display: flex;
   flex-direction: column;
@@ -501,7 +502,7 @@ article.featured {
   margin: 2% 0;
 }
 
-.details > * {
+.details>* {
   padding: 0;
   margin: 0;
 }
@@ -534,13 +535,9 @@ article.featured {
   display: block;
 }
 
-#see-live{
+#see-live {}
 
-}
-
-#source{
-
-}
+#source {}
 
 /* ----------------- */
 
