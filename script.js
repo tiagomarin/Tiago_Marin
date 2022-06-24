@@ -258,7 +258,7 @@ function fillModal(i) {
 
   // create div for title and close button
   const divTop = document.createElement('div');
-  divTop.classList = "modal-top";
+  divTop.classList = 'modal-top';
   divModal.appendChild(divTop);
 
   // create title of modal MOBILE
@@ -268,7 +268,7 @@ function fillModal(i) {
   divTop.appendChild(h3);
   // create title of card DESKTOP
   h3 = document.createElement('h3');
-  h3.classList = 'details-title h-desktop';
+  h3.classList = 'details-title h-desktop details-h3';
   h3.innerHTML = portifolio[i].headingDesktop;
   divTop.appendChild(h3);
 
@@ -313,23 +313,24 @@ function fillModal(i) {
   li.appendChild(div);
 
   // div for main part modal
-  divMain = document.createElement('div');
-  divMain.classList = 'modal-main'
+  const divMain = document.createElement('div');
+  divMain.classList = 'modal-main';
   divModal.appendChild(divMain);
 
   // create img of modal
   img = document.createElement('img');
+  img.classList = 'details-img';
   img.src = (portifolio[i].image);
   divMain.appendChild(img);
 
   // div for text and buttons
-  divBottom = document.createElement('div');
-  divBottom.classList = 'modal-bottom'
+  const divBottom = document.createElement('div');
+  divBottom.classList = 'modal-bottom';
   divMain.appendChild(divBottom);
 
   // create p
   p = document.createElement('p');
-  p.classList = 'card-p';
+  p.classList = 'card-p details-p';
   p.innerText = portifolio[i].highlightDetails;
   divBottom.appendChild(p);
 

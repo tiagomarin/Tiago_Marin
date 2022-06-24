@@ -247,43 +247,55 @@ article {
 
 .card1 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/project1.jpeg");
 }
 
 .card2 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/project2.jpeg");
 }
 
 .card3 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/project3.jpeg");
 }
 
 .card4 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/project4.jpeg");
 }
 
 .card5 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/project5.jpeg");
 }
 
 .card6 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/project6.jpeg");
 }
 
@@ -523,7 +535,7 @@ article.featured {
   gap: 16px;
 }
 
-.details>* {
+.details > * {
   padding: 0;
   margin: 0;
 }
@@ -541,7 +553,7 @@ article.featured {
 
 .details h3 {
   color: #172b4d;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', 'Gill Sans', Calibri, sans-serif;
   font-size: 32px;
   font-weight: 400;
 }
@@ -557,7 +569,7 @@ article.featured {
   align-items: flex-end;
 }
 
-.details img {
+.details .details-img {
   width: 100%;
 }
 
@@ -1034,7 +1046,6 @@ textarea {
     height: 70px;
     align-items: flex-start;
   }
-
 }
 
 /* ----------------- */
@@ -1414,7 +1425,7 @@ textarea {
     font-size: 14px;
   }
 
-  .details h3 {
+  .details .details-h3 {
     font-size: 28px;
   }
 
@@ -1438,11 +1449,11 @@ textarea {
     gap: 16px;
   }
 
-  .details img {
+  .details .details-img {
     width: 55%;
   }
 
-  .details p {
+  .details .details-p {
     font-size: 12px;
     padding-right: 5px;
     line-height: 18px;
@@ -1450,7 +1461,7 @@ textarea {
 }
 
 @media screen and (min-width: 850px) and (max-width: 1199px) {
-  .details p {
+  .details .details-p {
     font-size: 14px;
     padding-right: 8px;
     line-height: 18px;
@@ -1808,16 +1819,15 @@ textarea {
 
   .modal-main {
     display: flex;
-    gap: 24px
+    gap: 24px;
   }
 
-  .details img {
+  .details .details-img {
     width: 45%;
     float: left;
   }
 
-  .details p {
+  .details .details-p {
     padding-right: 16px;
   }
-
 }
