@@ -475,7 +475,7 @@ article.featured {
 } */
 
 .modal-container {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -492,8 +492,8 @@ article.featured {
   overflow-y: auto;
 }
 
-.modal-container.display-flex {
-  display: flex;
+.modal-container.display-none {
+  display: none;
 }
 
 
@@ -545,6 +545,11 @@ article.featured {
 .details-btns-container {
   display: flex;
   gap: 16px;
+}
+
+.details-btns-container a {
+  display: flex;
+  width: 160px;
 }
 
 #see-live {
@@ -1186,6 +1191,11 @@ textarea {
   button {
     padding: 4px 6px;
     font-size: 10px;
+  }
+
+  .card:hover .card-link {
+    display: flex;
+    width: 100%;
   }
 
   .lang ul {

@@ -182,7 +182,7 @@ for (i = 1; i < 7; i++) {
 
   // create STANDARD cards
   article = document.createElement('article');
-  article.classList = `card${i}`;
+  article.classList = `card card${i}`;
   recentWorks.appendChild(article);
 
   // create div
@@ -261,12 +261,6 @@ for (i = 1; i < 7; i++) {
 // create Details pop up
 // -------------------
 
-// clear modal
-function clearModal(project) {
-  const modalClear = document.querySelector('.details');
-  modalContainer.removeChild(modalClear);
-}
-
 // // fill modal
 function fillModal(i) {
 
@@ -279,6 +273,12 @@ function fillModal(i) {
   let divModal = document.createElement('div');
   divModal.classList = 'details';
   divContModal.appendChild(divModal);
+
+  //create x button
+  let xBtn = document.createElement('div');
+  xBtn.id = 'xBtn';
+  xBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+  divModal.appendChild(xBtn);
 
   // create title of card
   h2 = document.createElement('h3');
@@ -342,40 +342,49 @@ function fillModal(i) {
   // create buttons
   // see-live button
   let anchor = document.createElement('a');
-  anchor.id = `see-live${i}`;
-  anchor.setAttribute = ('href', portifolio[i].seeLive);
-  anchor.setAttribute = ('target', '_blank');
+  anchor.id = `see-live${1}`;
+  anchor.href = portifolio[i].seeLive;
+  anchor.target = '_blank';
   divBtns.appendChild(anchor);
 
   button = document.createElement('button');
   button.classList = 'small-button see-project';
-  button.innerHtml = 'See Live <i class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"></i>';
+  button.innerHTML = 'See Live <i class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"></i>';
   anchor.appendChild(button);
 
   // see source button
   anchor = document.createElement('a');
-  anchor.id = `source${i}`;
-  anchor.setAttribute = ('href', portifolio[i].seeSrc);
-  anchor.setAttribute = ('target', '_blank');
+  anchor.id = `source${1}`;
+  anchor.href = portifolio[i].seeSrc;
+  anchor.target = '_blank';
   divBtns.appendChild(anchor);
 
   button = document.createElement('button');
-  
+
   button.classList = 'small-button see-project';
-  button.innerHtml = 'See Source <i class="fa-brands fa-github"></i>';
+  button.innerHTML = 'See Source <i class="fa-brands fa-github"></i>';
   anchor.appendChild(button);
 }
 
+// --------  BUTTONS  ----------------
 // variables for see-live and source buttons
-const modalContainer = document.querySelector('.modal-container');
-const seeLiveBtn = document.querySelector(`#see-live${portifolio[X].seeLive}`); //fetch <a id="see-live XX "
-const sourceBtn = document.querySelector(`#source${portifolio[X].seeSrc}`); //fetch <a id="see-source XX "
-
+const seeLiveBtn = document.querySelector(`#see-live${1}`); //fetch <a id="see-live XX "
+const sourceBtn = document.querySelector(`#source${1}`); //fetch <a id="see-source XX "
 
 
 // ----------------------------
 // buttons funcionallity
 // ----------------------------
+
+// many buttons onpen modal
+// window.addEventListener('click', (event) => {
+//   const buttonId = event.target.id;
+//   if (event.target.classList.contains('see-project')) {
+//     fillModal(buttonId);
+//     newModal.classList.add('display-flex');
+//   }
+// })
+
 
 //variables for menu button
 const menuBtn = document.querySelector('.hamburger');
@@ -394,31 +403,68 @@ clsmodal.addEventListener('click', () => {
   menuBtn.classList.remove('active');
 });
 
+
+
+
 // ------ MODAL---------
 // open details MODAL
-let iModal = document.querySelector(`#`)
-const modalBtn = document.querySelector(iModal);
 
-modalBtn.addEventListener('click', () => {
+const modalBtnFeat = document.querySelector('#see-feat');
+modalBtnFeat.addEventListener('click', () => {
   // clearModal();
-  // fillModal(1);
-  modalContainer.classList.add('display-flex');
+  fillModal(0);
+});
+
+const modal1Btn = document.querySelector('#see-project1');
+modal1Btn.addEventListener('click', () => {
+  // clearModal();
+  fillModal(1);
+});
+
+const modal2Btn = document.querySelector('#see-project2');
+modal2Btn.addEventListener('click', () => {
+  // clearModal();
+  fillModal(2);
+});
+
+const modal3Btn = document.querySelector('#see-project3');
+modal3Btn.addEventListener('click', () => {
+  // clearModal();
+  fillModal(3);
+});
+
+const modal4Btn = document.querySelector('#see-project4');
+modal4Btn.addEventListener('click', () => {
+  // clearModal();
+  fillModal(4);
+});
+
+const modal5Btn = document.querySelector('#see-project5');
+modal5Btn.addEventListener('click', () => {
+  // clearModal();
+  fillModal(5);
+});
+
+const modal6Btn = document.querySelector('#see-project6');
+modal6Btn.addEventListener('click', () => {
+  // clearModal();
+  fillModal(6);
 });
 
 // close details MODAL
+
+// attempt with window and xBtn
+
 window.addEventListener('click', (e) => {
-  if (e.target === modalContainer || e.target === seeLiveBtn || e.target === sourceBtn) {
-    modalContainer.classList.remove('display-flex');
+  const modalContainer = document.querySelector('.modal-container');
+  const xBtn = document.querySelector('#xBtn');
+  if (e.target === modalContainer || e.target === xBtn) {
+    //remove container of details pop up
+    const portfolioGrid = document.querySelector('#recent-works');
+    portfolioGrid.removeChild(modalContainer);
   }
 });
 
-// // many buttons onpen modal
-// window.addEventListener('click', (event) => {
-//   const buttonId = event.target.id;
-//   if (event.target.classList.contains('see-project')) {
-//     clearModal("details");
-//     fillDetailsModal(buttonId);
-//     newModal.classList.add('display-flex');
-//   }
-// })
+
+
 
