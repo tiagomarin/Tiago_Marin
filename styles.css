@@ -389,6 +389,7 @@ article {
 
 .see-project {
   background: #ff6b00;
+  border: 1px solid #ff6b00;
   display: inline-block;
   text-align: center;
   font-family:
@@ -527,20 +528,43 @@ article.featured {
   margin: 0;
 }
 
-.details h2 {
+.modal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+#xBtn {
   color: #172b4d;
-  padding: 0;
-  margin: 0;
+}
+
+.details h3 {
+  color: #172b4d;
+  font-family: 'Crete Round';
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.h-desktop {
+  display: none;
 }
 
 .details .lang {
-  padding: 0;
-  margin: 0;
+  display: flex;
   color: black;
+  height: 70px;
+  align-items: flex-end;
 }
 
 .details img {
   width: 100%;
+}
+
+.modal-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .details p {
@@ -562,7 +586,7 @@ article.featured {
 
 .details-btns-container a {
   display: flex;
-  width: 160px;
+  text-decoration: none;
 }
 
 #see-live {
@@ -1003,6 +1027,14 @@ textarea {
   .footer hr {
     display: none;
   }
+
+  .details .lang {
+    display: flex;
+    color: black;
+    height: 70px;
+    align-items: flex-start;
+  }
+
 }
 
 /* ----------------- */
@@ -1192,8 +1224,8 @@ textarea {
   }
 
   #featured-p {
-    font-size: 11px;
-    line-height: 16px;
+    font-size: 10px;
+    line-height: 14px;
     letter-spacing: 0.02em;
     padding: 22px 0;
   }
@@ -1379,6 +1411,53 @@ textarea {
   }
 
   .footer .social-icons i {
+    font-size: 14px;
+  }
+
+  .details h3 {
+    font-size: 28px;
+  }
+
+  .h-desktop {
+    display: block;
+  }
+
+  .h-mobile {
+    display: none;
+  }
+
+  .details .lang {
+    display: flex;
+    color: black;
+    height: 40px;
+    align-items: flex-start;
+  }
+
+  .modal-main {
+    display: flex;
+    gap: 16px;
+  }
+
+  .details img {
+    width: 55%;
+  }
+
+  .details p {
+    font-size: 12px;
+    padding-right: 5px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1199px) {
+  .details p {
+    font-size: 14px;
+    padding-right: 8px;
+    line-height: 18px;
+  }
+
+  .details .see-project {
+    padding: 6px 9px;
     font-size: 14px;
   }
 }
@@ -1707,4 +1786,38 @@ textarea {
   footer hr {
     display: none;
   }
+
+  .details {
+    padding: 24px;
+  }
+
+  .h-desktop {
+    display: block;
+  }
+
+  .h-mobile {
+    display: none;
+  }
+
+  .details .lang {
+    display: flex;
+    color: black;
+    height: 70px;
+    align-items: flex-start;
+  }
+
+  .modal-main {
+    display: flex;
+    gap: 24px
+  }
+
+  .details img {
+    width: 45%;
+    float: left;
+  }
+
+  .details p {
+    padding-right: 16px;
+  }
+
 }
