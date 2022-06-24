@@ -1,15 +1,13 @@
-
 const recentWorks = document.querySelector('#recent-works');
 
 // function cardsSection (portifolio)
 const portifolio = [
   {
     id: 0,
-    heading: 'title of Featured card',
+    heading: 'title of Featured',
     highlight: "0 A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    highlightDetails: `Highligh Featured is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five, but also the leap into electronic typesetting, remaining essent`,
+    highlightDetails: 'Highligh Featured is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five, but also the leap into electronic typesetting, remaining essent',
     image: 'assets/project-featured.jpg',
-    imageDetails: 'assets/project-featured.jpg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
@@ -21,9 +19,8 @@ const portifolio = [
     id: 1,
     heading: 'title of card 1',
     highlight: '1 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
-    highlightDetails: `Highligh 1 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    image: 'assets/project1-web.jpg',
-    imageDetails: 'assets/project-featured.jpg',
+    highlightDetails: 'Highligh 1 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'assets/project1.jpeg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
@@ -34,9 +31,8 @@ const portifolio = [
     id: 2,
     heading: 'title of card 2',
     highlight: '2 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
-    highlightDetails: `Highligh 2 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    image: 'assets\project2.jpg',
-    imageDetails: 'assets/project-featured.jpg',
+    highlightDetails: 'Highligh 2 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'assets/project2.jpeg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
@@ -47,9 +43,8 @@ const portifolio = [
     id: 3,
     heading: 'title of card 3',
     highlight: '3 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
-    highlightDetails: `Highligh 3 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    image: 'assets\project3.jpg',
-    imageDetails: 'assets/project-featured.jpg',
+    highlightDetails: 'Highligh 3 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'assets/project3.jpeg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
@@ -60,9 +55,8 @@ const portifolio = [
     id: 4,
     heading: 'title of card 4',
     highlight: '4 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
-    highlightDetails: `Highligh 4 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    image: 'assets\project4.jpg',
-    imageDetails: 'assets/project-featured.jpg',
+    highlightDetails: 'Highligh 4 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'assets/project4.jpeg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
@@ -73,9 +67,8 @@ const portifolio = [
     id: 5,
     heading: 'title of card 5',
     highlight: '5 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
-    highlightDetails: `Highligh 5 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    image: 'assets\project5.jpg',
-    imageDetails: 'assets/project-featured.jpg',
+    highlightDetails: 'Highligh 5 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'assets/project5.jpeg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
@@ -86,9 +79,8 @@ const portifolio = [
     id: 6,
     heading: 'title of card 6',
     highlight: '6 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
-    highlightDetails: `Highligh 6 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    image: 'assets\project6.jpg',
-    imageDetails: 'assets/project-featured.jpg',
+    highlightDetails: 'Highligh 6 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'assets/project6.jpeg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
@@ -126,7 +118,7 @@ p.innerText = portifolio[0].highlight;
 divWrap.appendChild(p);
 
 // create the div of badges
-div = document.createElement('div');
+let div = document.createElement('div');
 div.classList = 'lang';
 divWrap.appendChild(div);
 
@@ -169,8 +161,8 @@ badge.innerHTML = portifolio[0].badge4;
 li.appendChild(badge);
 
 // create the button see project
-button = document.createElement('button');
-button.id = "see-feat";
+let button = document.createElement('button');
+button.id = 'see-feat';
 button.classList = 'small-button see-project';
 button.innerHTML = 'See Project';
 divWrap.appendChild(button);
@@ -178,8 +170,7 @@ divWrap.appendChild(button);
 // -----------------------
 // loop to create the STANDARD cards
 // ----------------------
-for (i = 1; i < 7; i++) {
-
+for (let i = 1; i < 7; i += 1) {
   // create STANDARD cards
   article = document.createElement('article');
   article.classList = `card card${i}`;
@@ -244,18 +235,15 @@ for (i = 1; i < 7; i++) {
   // create the button see project
   div = document.createElement('div');
   div.classList = 'card-link';
-  divWrap.appendChild(div);
+  article.appendChild(div);
   button = document.createElement('button');
   button.id = `see-project${i}`;
   button.classList = 'see-project';
   button.innerText = 'See Project';
 
-
   div.appendChild(button);
 }
 // fim do loop
-
-
 
 // -------------------
 // create Details pop up
@@ -263,38 +251,35 @@ for (i = 1; i < 7; i++) {
 
 // // fill modal
 function fillModal(i) {
-
   // create full screen container
-  let divContModal = document.createElement('div');
+  const divContModal = document.createElement('div');
   divContModal.classList = 'modal-container';
   recentWorks.appendChild(divContModal);
 
-  // create modal 
-  let divModal = document.createElement('div');
+  // create modal
+  const divModal = document.createElement('div');
   divModal.classList = 'details';
   divContModal.appendChild(divModal);
 
-  //create x button
-  let xBtn = document.createElement('div');
-  xBtn.id = 'xBtn';
-  xBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+  // create x button
+  const xBtn = document.createElement('div');
+  xBtn.innerHTML = '<i id="xBtn" class="fa-solid fa-xmark"></i>';
   divModal.appendChild(xBtn);
 
   // create title of card
-  h2 = document.createElement('h3');
+  const h2 = document.createElement('h3');
   h2.classList = 'details-title';
   h2.innerHTML = portifolio[i].heading;
   divModal.appendChild(h2);
 
-  // create div for language Badges 
-  let divBadges = document.createElement('div');
+  // create div for language Badges
+  const divBadges = document.createElement('div');
   divBadges.classList = 'lang';
   divModal.appendChild(divBadges);
 
   // create ul
   ul = document.createElement('ul');
   divBadges.appendChild(ul);
-
 
   // create each badge items
 
@@ -322,9 +307,9 @@ function fillModal(i) {
   div.innerHTML = portifolio[i].badge3;
   li.appendChild(div);
 
-  // create img of card
+  // create img of modal
   img = document.createElement('img');
-  img.src = (portifolio[i].imageDetails);
+  img.src = (portifolio[i].image);
   divModal.appendChild(img);
 
   // create p
@@ -334,10 +319,9 @@ function fillModal(i) {
   divModal.appendChild(p);
 
   // create div to buttons
-  let divBtns = document.createElement('div');
+  const divBtns = document.createElement('div');
   divBtns.classList = 'details-btns-container';
   divModal.appendChild(divBtns);
-
 
   // create buttons
   // see-live button
@@ -366,32 +350,15 @@ function fillModal(i) {
   anchor.appendChild(button);
 }
 
-// --------  BUTTONS  ----------------
-// variables for see-live and source buttons
-const seeLiveBtn = document.querySelector(`#see-live${1}`); //fetch <a id="see-live XX "
-const sourceBtn = document.querySelector(`#source${1}`); //fetch <a id="see-source XX "
+// --------  BUTTONS  FUNCTIONALITY  ----------------
+// --------------------------------------------------
 
-
-// ----------------------------
-// buttons funcionallity
-// ----------------------------
-
-// many buttons onpen modal
-// window.addEventListener('click', (event) => {
-//   const buttonId = event.target.id;
-//   if (event.target.classList.contains('see-project')) {
-//     fillModal(buttonId);
-//     newModal.classList.add('display-flex');
-//   }
-// })
-
-
-//variables for menu button
+// variables for menu button
 const menuBtn = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const clsmodal = document.querySelector('#cls-modal');
 
-//open menu mobile
+// open menu mobile
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.add('active');
   mobileMenu.classList.add('active');
@@ -402,9 +369,6 @@ clsmodal.addEventListener('click', () => {
   mobileMenu.classList.remove('active');
   menuBtn.classList.remove('active');
 });
-
-
-
 
 // ------ MODAL---------
 // open details MODAL
@@ -459,12 +423,8 @@ window.addEventListener('click', (e) => {
   const modalContainer = document.querySelector('.modal-container');
   const xBtn = document.querySelector('#xBtn');
   if (e.target === modalContainer || e.target === xBtn) {
-    //remove container of details pop up
+    // remove container of details pop up
     const portfolioGrid = document.querySelector('#recent-works');
     portfolioGrid.removeChild(modalContainer);
   }
 });
-
-
-
-

@@ -247,30 +247,44 @@ article {
 
 .card1 {
   background-image:
-    linear-gradient(180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%),
-    url("assets/project1-web.jpg");
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url("assets/project1.jpeg");
 }
 
 .card2 {
-  background-image: url("assets/project2.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url("assets/project2.jpeg");
 }
 
 .card3 {
-  background-image: url("assets/project3.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url("assets/project3.jpeg");
 }
 
 .card4 {
-  background-image: url("assets/project4.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url("assets/project4.jpeg");
 }
 
 .card5 {
-  background-image: url("assets/project5.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url("assets/project5.jpeg");
 }
 
 .card6 {
-  background-image: url("assets/project6.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url("assets/project6.jpeg");
 }
 
 /* cards text styles */
@@ -455,13 +469,13 @@ article.featured {
 }
 
 /* featured languages buttons */
-.featured .lang .badge {
+.details .badge {
   background: #fff;
   border: 1px solid #8993a4;
   color: #091e42;
 }
 
-.details .badge {
+.featured .lang .badge {
   background: #fff;
   border: 1px solid #8993a4;
   color: #091e42;
@@ -495,7 +509,6 @@ article.featured {
 .modal-container.display-none {
   display: none;
 }
-
 
 .details {
   display: flex;
@@ -1129,6 +1142,7 @@ textarea {
     display: flex;
     margin: auto 0 0 0;
     padding: 0;
+    height: 210px;
   }
 
   .wrap-card {
@@ -1143,7 +1157,7 @@ textarea {
   .card-h {
     font-size: 20px;
     line-height: 26px;
-    padding-top: 60px;
+    padding-top: 64px;
   }
 
   .card-p {
@@ -1181,29 +1195,46 @@ textarea {
     font-size: 11px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    padding: 0;
+    padding: 22px 0;
   }
 
   .card-link {
     display: none;
   }
 
-  button {
+  .see-project {
     padding: 4px 6px;
     font-size: 10px;
+  }
+
+  .card:hover .wrap-card {
+    display: none;
   }
 
   .card:hover .card-link {
     display: flex;
     width: 100%;
+    justify-content: end;
+  }
+
+  .lang {
+    padding: 0;
+  }
+
+  .lang.icons {
+    padding: 0;
   }
 
   .lang ul {
-    height: 20px;
     gap: 5px;
     margin: 0;
-    padding: 5px 0;
+    padding: 0;
     list-style-type: none;
+  }
+
+  .badge {
+    font-size: 9px;
+    padding: 6px 10px;
   }
 
   .small-button a {
@@ -1528,6 +1559,40 @@ textarea {
 
   .card-link {
     display: none;
+  }
+
+  .card:hover .wrap-card {
+    display: none;
+  }
+
+  .card:hover .card-link {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+
+  .card1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project1.jpeg);
+  }
+
+  .card2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project2.jpeg);
+  }
+
+  .card3:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project3.jpeg);
+  }
+
+  .card4:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project4.jpeg);
+  }
+
+  .card5:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project5.jpeg);
+  }
+
+  .card6:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project6.jpeg);
   }
 
   /* -------------------- */
