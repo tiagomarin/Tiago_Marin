@@ -715,14 +715,14 @@ article.featured {
   margin: 120px 0 70px;
 }
 
-.form {
+#form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-.form input,
+#form input,
 textarea {
   font-family:
     'Inter',
@@ -758,12 +758,33 @@ textarea {
   padding: 16px;
 }
 
+.submit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
 #submit {
   margin: 24px 0 124px 0;
   border: 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  width: fit-content;
+}
+
+.error {
+  color: #ff6b00;
+  font-size: 16px;
+  font-family:
+    'Inter',
+    "Segoe UI",
+    Roboto,
+    Ubuntu,
+    "Open Sans",
+    sans-serif;
+  padding: 4px;
 }
 
 .footer {
@@ -1020,7 +1041,7 @@ textarea {
     max-width: 380px;
   }
 
-  .form {
+  #form {
     margin-bottom: 40px;
   }
 
@@ -1371,12 +1392,12 @@ textarea {
     margin: 0;
   }
 
-  .form {
+  #form {
     align-items: flex-start;
     border: 0;
   }
 
-  .form input {
+  #form input {
     font-size: 10px;
     line-height: 12px;
   }
@@ -1767,7 +1788,7 @@ textarea {
     margin: 0;
   }
 
-  .form {
+  #form {
     align-items: flex-start;
     border: 0;
   }

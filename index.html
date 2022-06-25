@@ -140,20 +140,23 @@
       <li class="items">Terminal</li>
     </ul>
   </div>
+  
   <section id="contact-me">
     <h3>I'm always <br> interested in hearing about new projects, so if you'd like to chat please get in touch.
     </h3>
-    <form class="form" action="https://formspree.io/f/mrgjjnpd" method="post">
+    <form id="form" action="https://formspree.io/f/mrgjjnpd" method="post">
       <input id="name" type="text" placeholder="Full Name" maxlength="30" required>
       <input id="email" type="email" name="email" placeholder="Email address">
       <textarea aria-label="write your message and I'll get back to you." id="message" name="message"
-        placeholder="Enter text here" maxlength="500"></textarea>
-      <div class="small-button submit">
-        <input id="submit" type="submit" value="Get in touch">
-        <small class="error"></small>
+        placeholder="Enter text here" maxlength="500" required></textarea>
+      <div class="submit-container">
+        <button id="submit" class="see-project" type="submit">Get in touch</button>
+        <div class="error"></div>
       </div>
     </form>
+    </div>
   </section>
+
   <footer class="footer">
     <ul class="social-icons">
       <li><a aria-label="github" href="#" target="_blank"><i class="fa-brands fa-github"></i></a></li>
@@ -165,6 +168,7 @@
     <hr>
   </footer>
   <script defer src="script.js"></script>
+  <script defer src="form.js"></script>
 </body>
 
 </html>
