@@ -715,14 +715,14 @@ article.featured {
   margin: 120px 0 70px;
 }
 
-.form {
+#form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-.form input,
+#form input,
 textarea {
   font-family:
     'Inter',
@@ -764,6 +764,9 @@ textarea {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+}
+#error-msg {
+  color: #091e42;
 }
 
 .footer {
@@ -1020,7 +1023,7 @@ textarea {
     max-width: 380px;
   }
 
-  .form {
+  #form {
     margin-bottom: 40px;
   }
 
@@ -1371,12 +1374,12 @@ textarea {
     margin: 0;
   }
 
-  .form {
+  #form {
     align-items: flex-start;
     border: 0;
   }
 
-  .form input {
+  #form input {
     font-size: 10px;
     line-height: 12px;
   }
@@ -1767,7 +1770,7 @@ textarea {
     margin: 0;
   }
 
-  .form {
+  #form {
     align-items: flex-start;
     border: 0;
   }
