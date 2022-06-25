@@ -758,15 +758,33 @@ textarea {
   padding: 16px;
 }
 
+.submit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
 #submit {
   margin: 24px 0 124px 0;
   border: 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  width: fit-content;
 }
-#error-msg {
-  color: #091e42;
+
+.error {
+  color: #ff6b00;
+  font-size: 16px;
+  font-family:
+    'Inter',
+    "Segoe UI",
+    Roboto,
+    Ubuntu,
+    "Open Sans",
+    sans-serif;
+  padding: 4px;
 }
 
 .footer {
