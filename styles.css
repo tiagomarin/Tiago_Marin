@@ -247,55 +247,43 @@ article {
 
 .card1 {
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
     url("assets/project1.jpeg");
 }
 
 .card2 {
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
     url("assets/project2.jpeg");
 }
 
 .card3 {
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
     url("assets/project3.jpeg");
 }
 
 .card4 {
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
     url("assets/project4.jpeg");
 }
 
 .card5 {
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
     url("assets/project5.jpeg");
 }
 
 .card6 {
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
     url("assets/project6.jpeg");
 }
 
@@ -530,12 +518,10 @@ article.featured {
   background-color: white;
   color: #e05304;
   width: 90%;
-  position: relative;
-  margin: 2% 0;
   gap: 16px;
 }
 
-.details > * {
+.details>* {
   padding: 0;
   margin: 0;
 }
