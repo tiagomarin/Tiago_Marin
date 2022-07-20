@@ -4,17 +4,16 @@ const recentWorks = document.querySelector('#recent-works');
 const portifolio = [
   {
     id: 0,
-    headingMobile: 'title of Featured',
-    headingDesktop: 'title of Featured longer longer and longer',
-    highlight: "0 A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    highlightDetails: 'Highligh Featured is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five, but also the leap into electronic typesetting, remaining essent',
-    image: 'assets/project-featured.jpg',
-    badge1: 'css',
+    headingMobile: 'Eagle English',
+    headingDesktop: 'Eagle English Smart learning for all!',
+    highlight: "This is a prototype for an English school company. Built to practice my skills in HTML CSS and JavaScript, mainly regarding responsiveness.",
+    highlightDetails: "This project was designed to test some of the abilities I learned in the first module (5 weeks) of the Microverse program, such as HTML, CSS, JavaScript and Communication, mainly regarding responsiveness. It's a prototype landing page for an English School where you can find some basic information about the course and a little about the teachers.",
+    image: 'assets/desktop1.png',
+    badge1: 'scss',
     badge2: 'html',
-    badge3: 'Bootstrap',
-    badge4: 'Ruby',
-    seeLive: 'https://tiago-lelinski-marin.github.io/myPortfolio/',
-    seeSrc: 'https://github.com/Tiago-Lelinski-Marin/myPortfolio',
+    badge3: 'JavaScript',
+    seeLive: 'https://tiago-lelinski-marin.github.io/Eagle-English/',
+    seeSrc: 'https://github.com/Tiago-Lelinski-Marin/Eagle-English',
   },
   {
     id: 1,
@@ -147,13 +146,6 @@ ul.appendChild(li);
 badge = document.createElement('div');
 badge.classList = 'badge';
 badge.innerHTML = portifolio[0].badge3;
-li.appendChild(badge);
-li = document.createElement('li');
-li.classList = 'lang-icons';
-ul.appendChild(li);
-badge = document.createElement('div');
-badge.classList = 'badge';
-badge.innerHTML = portifolio[0].badge4;
 li.appendChild(badge);
 // create the button see project
 let button = document.createElement('button');
