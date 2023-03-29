@@ -640,16 +640,46 @@ article.featured {
 }
 
 /* grid for skills list */
-.skills {
-  padding: 120px 0;
+#skills {
   background: #1c1a19;
+  padding: 0 24px;
 }
 
-/* skills box */
-.skills ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 24px;
+.skills-title {
+  font-family: "Crete Round", "Gill Sans", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #f55800;
+  /* color: #fff5e1; */
+  /* text-shadow: 0 0 2px white; */
+}
+
+.skills-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px 0;
+  list-style: none;
+  text-align: center;
+}
+
+.skill {
+  width: 28%;
+}
+
+.skill img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.skill p {
   font-family:
     "Inter",
     "Segoe UI",
@@ -657,22 +687,14 @@ article.featured {
     Ubuntu,
     "Open Sans",
     sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ff6b00;
 }
 
-/* skills category */
-.skills li {
-  padding: 12px 24px;
-}
 
-/* list of skills */
-.items {
-  font-weight: 400;
-  font-size: 22px;
-}
 
 /* ************************ */
 
@@ -696,7 +718,7 @@ article.featured {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172b4d;
+  color: #FFFCF7;
   text-align: center;
   margin: 120px 0 70px;
 }
@@ -962,57 +984,6 @@ textarea {
     margin-right: 60px;
   }
 
-  .skills {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 80px 60px;
-  }
-
-  .skills ul {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 44px;
-    padding: 0;
-  }
-
-  .skills li {
-    text-align: left;
-    padding: 6px 12px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .skills li:nth-child(2) {
-    text-align: left;
-    padding-left: 46px;
-  }
-
-  .skills li:nth-child(3) {
-    text-align: left;
-    padding-left: 46px;
-  }
-
-  .skills li:nth-child(4) {
-    text-align: left;
-    padding-left: 46px;
-  }
-
-  .skills li:nth-child(5) {
-    text-align: left;
-    padding-left: 46px;
-  }
-
-  .skills li:nth-child(6) {
-    text-align: left;
-    padding-left: 46px;
-  }
-
-  .items {
-    font-size: 16px !important;
-  }
-
   #contact-me {
     margin: 0 10% 0 10%;
   }
@@ -1059,7 +1030,7 @@ textarea {
 
 /* medium screens  */
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 916px) {
   #header-mobile {
     display: none;
   }
@@ -1324,35 +1295,40 @@ textarea {
     padding-bottom: 90px;
   }
 
-  .skills {
+  /* skills */
+  .skills-grid {
+    width: 70%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 80px 150px 80px 10%;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 24px;
+    padding: 24px 0;
+    list-style: none;
+    text-align: center;
   }
 
-  .skills ul {
-    font-size: 18px;
-    padding: 0;
+  .skill {
+    width: 17%;
+  }
+
+  .skill img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .skill p {
+    font-family:
+      "Inter",
+      "Segoe UI",
+      Roboto,
+      Ubuntu,
+      "Open Sans",
+      sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 24px;
-  }
-
-  .skills li {
-    /* padding: 0; */
-    text-align: left;
-    padding: 12px 0;
-    line-height: 24px;
-  }
-
-  .skills li img {
-    width: 12px;
-  }
-
-  li.items {
-    /* padding: 0; */
-    font-size: 12px;
-    padding: 5px 0 5px 20px;
+    color: #ff6b00;
   }
 
   /* CONTACT ME -SECTION */
@@ -1484,7 +1460,7 @@ textarea {
 
 /* bigger desktop screens  */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 916px) {
   #header-mobile {
     display: none;
   }
@@ -1639,6 +1615,9 @@ textarea {
     gap: 24px;
     color: #091e42;
   }
+  .featured img {
+    height: 80%;
+  }
 
   .wrap-featured {
     padding-top: 0;
@@ -1727,27 +1706,44 @@ textarea {
     background: #f55800;
   }
 
-  .skills {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 160px;
-    padding: 130px 141px;
-    justify-content: center;
-  }
+  /* skills */
 
-  .skills ul {
-    padding: 0;
-    font-weight: 700;
-    font-size: 32px;
-  }
+    /* skills */
+    .skills-grid {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      gap: 24px;
+      padding: 24px 0;
+      list-style: none;
+      text-align: center;
+    }
+  
+    .skill {
+      width: 17%;
+    }
+  
+    .skill img{
+      width: 100%;
+      border-radius: 15px;
+    }
+    
+    .skill p {
+      font-family:
+        "Inter",
+        "Segoe UI",
+        Roboto,
+        Ubuntu,
+        "Open Sans",
+        sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ff6b00;
+    }
 
-  .skills li {
-    min-width: 225px;
-    text-align: left;
-    padding: 12px 0;
-    line-height: 24px;
-  }
 
   /*******************   */
 
