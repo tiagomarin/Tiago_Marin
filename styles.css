@@ -244,6 +244,10 @@ article {
   height: 85%;
 }
 
+.lang {
+  padding: 12px 0;
+}
+
 .wrap-card .lang {
   width: 100%;
   padding-left: 16px;
@@ -256,50 +260,62 @@ article {
 
 .card1 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/snapshot-britishmeals.png");
-    background-position: center;
+  background-position: center;
 }
 
 .card2 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/eagle-english.png");
-    background-position: center;
+  background-position: center;
 }
 
 .card3 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/snapshot-leaderboard.png");
-    background-position: center;
+  background-position: center;
 }
 
 .card4 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/snapshot-brewdog.png");
-    background-position: center;
+  background-position: center;
 }
 
 .card5 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/snapshot-bookstore.png");
-    background-position: center;
+  background-position: center;
 }
 
 .card6 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("assets/project6.jpeg");
-    background-position: center;
+  background-position: center;
 }
 
 /* cards text styles */
@@ -319,7 +335,7 @@ article {
   font-size: 32px;
   line-height: 44px;
   margin: 0;
-  padding: 20px 16px 0 ;
+  padding: 20px 16px 0;
 }
 
 .card-p {
@@ -336,9 +352,6 @@ article {
 }
 
 /* languages badges */
-.lang {
-  padding: 12px 0;
-}
 
 .lang ul {
   width: 100%;
@@ -456,7 +469,7 @@ article.featured {
   color: #091e42;
   display: flex;
   flex-direction: column;
-  margin-top: 64px;
+  margin-top: 24px;
 }
 
 /* fetured text styles */
@@ -537,7 +550,7 @@ article.featured {
   gap: 16px;
 }
 
-.details>* {
+.details > * {
   padding: 0;
   margin: 0;
 }
@@ -635,6 +648,21 @@ article.featured {
   letter-spacing: 0.37px;
 }
 
+.skill p {
+  font-family:
+    "Inter",
+    "Segoe UI",
+    Roboto,
+    Ubuntu,
+    "Open Sans",
+    sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ff6b00;
+}
+
 #aboutme p {
   font-family:
     "Inter",
@@ -670,7 +698,9 @@ article.featured {
   line-height: 88px;
   letter-spacing: 0.37px;
   color: #f55800;
+
   /* color: #fff5e1; */
+
   /* text-shadow: 0 0 2px white; */
 }
 
@@ -690,25 +720,12 @@ article.featured {
   width: 28%;
 }
 
-.skill img{
+.skill img {
   width: 100%;
   border-radius: 15px;
 }
 
-.skill p {
-  font-family:
-    "Inter",
-    "Segoe UI",
-    Roboto,
-    Ubuntu,
-    "Open Sans",
-    sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: #ff6b00;
-}
+
 
 
 
@@ -734,7 +751,7 @@ article.featured {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFCF7;
+  color: #172b4d;
   text-align: center;
   margin: 120px 0 70px;
 }
@@ -1012,6 +1029,7 @@ textarea {
     font-size: 28px;
     line-height: 40px;
     max-width: 380px;
+    color: #172b4d;
   }
 
   #form {
@@ -1190,8 +1208,6 @@ textarea {
     align-items: flex-end;
   }
 
-
-
   .card-h {
     font-size: 20px;
     line-height: 26px;
@@ -1212,11 +1228,18 @@ textarea {
     gap: 2%;
     color: #091e42;
     margin-top: 0;
+    height: 100%;
+  }
+
+  .skill img {
+    width: 100%;
+    border-radius: 15px;
   }
 
   article.featured img {
     gap: 18px;
     width: 58%;
+    height: min-content;
   }
 
   .wrap-featured {
@@ -1301,6 +1324,21 @@ textarea {
     line-height: 40px;
   }
 
+  .skill p {
+    font-family:
+      "Inter",
+      "Segoe UI",
+      Roboto,
+      Ubuntu,
+      "Open Sans",
+      sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ff6b00;
+  }
+
   #aboutme p {
     font-size: 12px;
     line-height: 18px;
@@ -1328,25 +1366,7 @@ textarea {
     width: 17%;
   }
 
-  .skill img{
-    width: 100%;
-    border-radius: 15px;
-  }
-  
-  .skill p {
-    font-family:
-      "Inter",
-      "Segoe UI",
-      Roboto,
-      Ubuntu,
-      "Open Sans",
-      sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ff6b00;
-  }
+
 
   /* CONTACT ME -SECTION */
   #contact-me {
@@ -1631,9 +1651,12 @@ textarea {
     padding: 0;
     gap: 24px;
     color: #091e42;
+    height: 100%;
   }
+
   .featured img {
-    height: 80%;
+    width: 55%;
+    height: min-content;
   }
 
   .wrap-featured {
@@ -1646,7 +1669,7 @@ textarea {
   }
 
   #featured-p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 28px;
   }
 
@@ -1713,6 +1736,21 @@ textarea {
     color: #f55800;
   }
 
+  .skill p {
+    font-family:
+      "Inter",
+      "Segoe UI",
+      Roboto,
+      Ubuntu,
+      "Open Sans",
+      sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ff6b00;
+  }
+
   #aboutme p {
     font-size: 20px;
     line-height: 32px;
@@ -1731,41 +1769,28 @@ textarea {
 
   /* skills */
 
-    /* skills */
-    .skills-grid {
-      width: 70%;
-      display: flex;
-      flex-wrap: wrap;
-      margin: auto;
-      gap: 24px;
-      padding: 24px 0;
-      list-style: none;
-      text-align: center;
-    }
-  
-    .skill {
-      width: 17%;
-    }
-  
-    .skill img{
-      width: 100%;
-      border-radius: 15px;
-    }
-    
-    .skill p {
-      font-family:
-        "Inter",
-        "Segoe UI",
-        Roboto,
-        Ubuntu,
-        "Open Sans",
-        sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      color: #ff6b00;
-    }
+  /* skills */
+  .skills-grid {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 24px;
+    padding: 24px 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .skill {
+    width: 17%;
+  }
+
+  .skill img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+
 
 
   /*******************   */
@@ -1786,6 +1811,7 @@ textarea {
     margin: 0;
     font-size: 40px;
     line-height: 52px;
+    color: #172b4d;
   }
 
   #contact-me br {
