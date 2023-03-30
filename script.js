@@ -215,6 +215,11 @@ for (let i = 1; i < 7; i += 1) {
   ul = document.createElement('ul');
   div.appendChild(ul);
 
+  // create li-items
+  li = document.createElement('li');
+  li.classList = 'lang-icons';
+  ul.appendChild(li);
+
   // create badge items
   li = document.createElement('li');
   li.classList = 'lang-icons';

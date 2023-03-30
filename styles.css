@@ -205,7 +205,7 @@ ul.social-icons {
   font-family: "Crete Round", Roboto, "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 40px;
   line-height: 52px;
   padding: 16px 0 36px;
   margin-top: 120px;
@@ -348,25 +348,22 @@ article {
     sans-serif;
   line-height: 24px;
   margin: 0;
-  padding: 12px 16px;
+  padding: 12px 0;
 }
 
 /* languages badges */
-
 .lang ul {
-  width: 100%;
   display: flex;
-  justify-content: flex-start;
   height: 40px;
   gap: 12px;
   margin: 0;
   list-style-type: none;
 }
 
-/* .lang-icons :hover {
+.lang-icons :hover {
   transform: scale(1.1);
   background: rgba(255, 255, 255, 0.45);
-} */
+}
 
 .badge {
   background: rgba(255, 255, 255, 0.24);
@@ -684,7 +681,8 @@ article.featured {
 }
 
 /* grid for skills list */
-#skills {
+.skills {
+  padding: 120px 0;
   background: #1c1a19;
   padding: 0 24px;
 }
@@ -725,9 +723,16 @@ article.featured {
   border-radius: 15px;
 }
 
+/* skills category */
+.skills li {
+  padding: 12px 24px;
+}
 
-
-
+/* list of skills */
+.items {
+  font-weight: 400;
+  font-size: 22px;
+}
 
 /* ************************ */
 
@@ -1017,6 +1022,57 @@ textarea {
     margin-right: 60px;
   }
 
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 80px 60px;
+  }
+
+  .skills ul {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    padding: 0;
+  }
+
+  .skills li {
+    text-align: left;
+    padding: 6px 12px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .skills li:nth-child(2) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(3) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(4) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(5) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .skills li:nth-child(6) {
+    text-align: left;
+    padding-left: 46px;
+  }
+
+  .items {
+    font-size: 16px !important;
+  }
+
   #contact-me {
     margin: 0 10% 0 10%;
   }
@@ -1064,7 +1120,7 @@ textarea {
 
 /* medium screens  */
 
-@media screen and (min-width: 768px) and (max-width: 916px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   #header-mobile {
     display: none;
   }
@@ -1206,12 +1262,13 @@ textarea {
     flex-wrap: wrap;
     height: 100%;
     align-items: flex-end;
+    margin: 10px;
   }
 
   .card-h {
     font-size: 20px;
     line-height: 26px;
-    padding-top: 20px;
+    padding-top: 64px;
   }
 
   .card-p {
@@ -1350,23 +1407,19 @@ textarea {
     padding-bottom: 90px;
   }
 
-  /* skills */
-  .skills-grid {
-    width: 70%;
+  .skills {
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    gap: 24px;
-    padding: 24px 0;
-    list-style: none;
-    text-align: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 80px 150px 80px 10%;
   }
 
-  .skill {
-    width: 17%;
+  .skills ul {
+    font-size: 18px;
+    padding: 0;
+    line-height: 24px;
   }
-
-
 
   /* CONTACT ME -SECTION */
   #contact-me {
@@ -1497,7 +1550,7 @@ textarea {
 
 /* bigger desktop screens  */
 
-@media screen and (min-width: 916px) {
+@media screen and (min-width: 1200px) {
   #header-mobile {
     display: none;
   }
@@ -1544,7 +1597,7 @@ textarea {
   .intro {
     background: url("assets/Illustration-header2.png") no-repeat;
     background-position: right;
-    background-size: 38%;
+    background-size: 45%;
     background-color: #1c1a19;
     margin-top: 72px;
     padding: 192px 0 231px 36px;
@@ -1632,7 +1685,7 @@ textarea {
     display: flex;
     margin: auto 0 0 0;
     padding: 0;
-    height: 320px;
+    height: 435px;
   }
 
   .wrap-card {
@@ -1688,33 +1741,27 @@ textarea {
   }
 
   .card1:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/snapshot-britishmeals.png);
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project1.jpeg);
   }
 
   .card2:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/eagle-english.png);
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project2.jpeg);
   }
 
   .card3:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/snapshot-leaderboard.png);
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project3.jpeg);
   }
 
   .card4:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/snapshot-brewdog.png);
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project4.jpeg);
   }
 
   .card5:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/bookstore.png);
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project5.jpeg);
   }
 
   .card6:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/math-magicians.png);
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project6.jpeg);
   }
 
   /* -------------------- */
@@ -1768,8 +1815,6 @@ textarea {
   }
 
   /* skills */
-
-  /* skills */
   .skills-grid {
     width: 70%;
     display: flex;
@@ -1790,8 +1835,18 @@ textarea {
     border-radius: 15px;
   }
 
+  .skills ul {
+    padding: 0;
+    font-weight: 700;
+    font-size: 32px;
+  }
 
-
+  .skills li {
+    min-width: 225px;
+    text-align: left;
+    padding: 12px 0;
+    line-height: 24px;
+  }
 
   /*******************   */
 
