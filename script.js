@@ -457,3 +457,11 @@ window.addEventListener('click', (e) => {
     portfolioGrid.removeChild(modalContainer);
   }
 });
+
+logoSplash = document.querySelector('.logo-splash');
+splashScreen = document.getElementById('splash-screen');
+
+// Add class 'hide' from splash screen after 3 seconds the page loaded
+setTimeout(()=> {
+  splashScreen.classList.add('hide');
+}, 3500);
