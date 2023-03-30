@@ -205,7 +205,7 @@ ul.social-icons {
   font-family: "Crete Round", Roboto, "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 52px;
   padding: 16px 0 36px;
   margin-top: 120px;
@@ -237,7 +237,16 @@ article {
 
 /* mobile card wrapper */
 .wrap-card {
-  margin: 0 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85%;
+}
+
+.wrap-card .lang {
+  width: 100%;
+  padding-left: 16px;
 }
 
 /* cards background images */
@@ -249,35 +258,40 @@ article {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)),
-    url("assets/project1.jpeg");
+    url("assets/snapshot-britishmeals.png");
+    background-position: center;
 }
 
 .card2 {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)),
-    url("assets/project2.jpeg");
+    url("assets/eagle-english.png");
+    background-position: center;
 }
 
 .card3 {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)),
-    url("assets/project3.jpeg");
+    url("assets/snapshot-leaderboard.png");
+    background-position: center;
 }
 
 .card4 {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)),
-    url("assets/project4.jpeg");
+    url("assets/snapshot-brewdog.png");
+    background-position: center;
 }
 
 .card5 {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)),
-    url("assets/project5.jpeg");
+    url("assets/snapshot-bookstore.png");
+    background-position: center;
 }
 
 .card6 {
@@ -285,6 +299,7 @@ article {
     linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)),
     url("assets/project6.jpeg");
+    background-position: center;
 }
 
 /* cards text styles */
@@ -304,7 +319,7 @@ article {
   font-size: 32px;
   line-height: 44px;
   margin: 0;
-  padding: 94px 0 0 0;
+  padding: 20px 16px 0 ;
 }
 
 .card-p {
@@ -317,27 +332,28 @@ article {
     sans-serif;
   line-height: 24px;
   margin: 0;
-  padding: 12px 0;
+  padding: 12px 16px;
 }
 
 /* languages badges */
 .lang {
   padding: 12px 0;
-  transition: all 5s ease-out;
 }
 
 .lang ul {
+  width: 100%;
   display: flex;
+  justify-content: flex-start;
   height: 40px;
   gap: 12px;
   margin: 0;
   list-style-type: none;
 }
 
-.lang-icons :hover {
+/* .lang-icons :hover {
   transform: scale(1.1);
   background: rgba(255, 255, 255, 0.45);
-}
+} */
 
 .badge {
   background: rgba(255, 255, 255, 0.24);
@@ -640,16 +656,46 @@ article.featured {
 }
 
 /* grid for skills list */
-.skills {
-  padding: 120px 0;
+#skills {
   background: #1c1a19;
+  padding: 0 24px;
 }
 
-/* skills box */
-.skills ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 24px;
+.skills-title {
+  font-family: "Crete Round", "Gill Sans", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #f55800;
+  /* color: #fff5e1; */
+  /* text-shadow: 0 0 2px white; */
+}
+
+.skills-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px 0;
+  list-style: none;
+  text-align: center;
+}
+
+.skill {
+  width: 28%;
+}
+
+.skill img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.skill p {
   font-family:
     "Inter",
     "Segoe UI",
@@ -657,22 +703,14 @@ article.featured {
     Ubuntu,
     "Open Sans",
     sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ff6b00;
 }
 
-/* skills category */
-.skills li {
-  padding: 12px 24px;
-}
 
-/* list of skills */
-.items {
-  font-weight: 400;
-  font-size: 22px;
-}
 
 /* ************************ */
 
@@ -696,7 +734,7 @@ article.featured {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172b4d;
+  color: #FFFCF7;
   text-align: center;
   margin: 120px 0 70px;
 }
@@ -962,57 +1000,6 @@ textarea {
     margin-right: 60px;
   }
 
-  .skills {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 80px 60px;
-  }
-
-  .skills ul {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 44px;
-    padding: 0;
-  }
-
-  .skills li {
-    text-align: left;
-    padding: 6px 12px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .skills li:nth-child(2) {
-    text-align: left;
-    padding-left: 46px;
-  }
-
-  .skills li:nth-child(3) {
-    text-align: left;
-    padding-left: 46px;
-  }
-
-  .skills li:nth-child(4) {
-    text-align: left;
-    padding-left: 46px;
-  }
-
-  .skills li:nth-child(5) {
-    text-align: left;
-    padding-left: 46px;
-  }
-
-  .skills li:nth-child(6) {
-    text-align: left;
-    padding-left: 46px;
-  }
-
-  .items {
-    font-size: 16px !important;
-  }
-
   #contact-me {
     margin: 0 10% 0 10%;
   }
@@ -1059,7 +1046,7 @@ textarea {
 
 /* medium screens  */
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 916px) {
   #header-mobile {
     display: none;
   }
@@ -1201,13 +1188,14 @@ textarea {
     flex-wrap: wrap;
     height: 100%;
     align-items: flex-end;
-    margin: 10px;
   }
+
+
 
   .card-h {
     font-size: 20px;
     line-height: 26px;
-    padding-top: 64px;
+    padding-top: 20px;
   }
 
   .card-p {
@@ -1324,35 +1312,40 @@ textarea {
     padding-bottom: 90px;
   }
 
-  .skills {
+  /* skills */
+  .skills-grid {
+    width: 70%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 80px 150px 80px 10%;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 24px;
+    padding: 24px 0;
+    list-style: none;
+    text-align: center;
   }
 
-  .skills ul {
-    font-size: 18px;
-    padding: 0;
+  .skill {
+    width: 17%;
+  }
+
+  .skill img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .skill p {
+    font-family:
+      "Inter",
+      "Segoe UI",
+      Roboto,
+      Ubuntu,
+      "Open Sans",
+      sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 24px;
-  }
-
-  .skills li {
-    /* padding: 0; */
-    text-align: left;
-    padding: 12px 0;
-    line-height: 24px;
-  }
-
-  .skills li img {
-    width: 12px;
-  }
-
-  li.items {
-    /* padding: 0; */
-    font-size: 12px;
-    padding: 5px 0 5px 20px;
+    color: #ff6b00;
   }
 
   /* CONTACT ME -SECTION */
@@ -1484,7 +1477,7 @@ textarea {
 
 /* bigger desktop screens  */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 916px) {
   #header-mobile {
     display: none;
   }
@@ -1531,7 +1524,7 @@ textarea {
   .intro {
     background: url("assets/Illustration-header2.png") no-repeat;
     background-position: right;
-    background-size: 45%;
+    background-size: 38%;
     background-color: #1c1a19;
     margin-top: 72px;
     padding: 192px 0 231px 36px;
@@ -1619,7 +1612,7 @@ textarea {
     display: flex;
     margin: auto 0 0 0;
     padding: 0;
-    height: 435px;
+    height: 320px;
   }
 
   .wrap-card {
@@ -1638,6 +1631,9 @@ textarea {
     padding: 0;
     gap: 24px;
     color: #091e42;
+  }
+  .featured img {
+    height: 80%;
   }
 
   .wrap-featured {
@@ -1669,27 +1665,33 @@ textarea {
   }
 
   .card1:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project1.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/snapshot-britishmeals.png);
+    background-position: center;
   }
 
   .card2:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project2.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/eagle-english.png);
+    background-position: center;
   }
 
   .card3:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/snapshot-leaderboard.png);
+    background-position: center;
   }
 
   .card4:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project4.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/snapshot-brewdog.png);
+    background-position: center;
   }
 
   .card5:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project5.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/bookstore.png);
+    background-position: center;
   }
 
   .card6:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/project6.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/math-magicians.png);
+    background-position: center;
   }
 
   /* -------------------- */
@@ -1727,27 +1729,44 @@ textarea {
     background: #f55800;
   }
 
-  .skills {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 160px;
-    padding: 130px 141px;
-    justify-content: center;
-  }
+  /* skills */
 
-  .skills ul {
-    padding: 0;
-    font-weight: 700;
-    font-size: 32px;
-  }
+    /* skills */
+    .skills-grid {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      gap: 24px;
+      padding: 24px 0;
+      list-style: none;
+      text-align: center;
+    }
+  
+    .skill {
+      width: 17%;
+    }
+  
+    .skill img{
+      width: 100%;
+      border-radius: 15px;
+    }
+    
+    .skill p {
+      font-family:
+        "Inter",
+        "Segoe UI",
+        Roboto,
+        Ubuntu,
+        "Open Sans",
+        sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ff6b00;
+    }
 
-  .skills li {
-    min-width: 225px;
-    text-align: left;
-    padding: 12px 0;
-    line-height: 24px;
-  }
 
   /*******************   */
 
