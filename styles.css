@@ -147,10 +147,44 @@ header {
 .intro {
   margin-top: 60px;
   padding: 120px 24px;
-  background: url("assets/illustration-header-mobile.png") no-repeat;
-  background-position: right 120%;
+  background: url("assets/design/Illustration-header.png") no-repeat;
   background-color: #1c1a19;
 }
+
+@media screen and (min-height: 620px) {
+  .intro {
+    height: calc(100vh - 60px);
+  }
+}
+
+@media screen and (max-height: 690px) {
+  .intro {
+    background-position: 100% 140%;
+    background-size: 60%;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .intro {
+    background-position: 100% 140%;
+    background-size: 40%;
+  }
+}
+
+@media screen and (min-height: 691px) {
+  .intro {
+    background-position: 100% 120%;
+    background-size: 60%;
+  }
+}
+
+@media screen and (min-height: 761px) {
+  .intro {
+    background-position: 100% 110%;
+    background-size: 70%;
+  }
+}
+
 
 /* intro title */
 h1 {
@@ -230,7 +264,7 @@ ul.social-icons {
   font-size: 32px;
   line-height: 52px;
   padding: 16px 0 36px;
-  margin-top: 120px;
+  margin-top: 40px;
   margin-bottom: 0;
 }
 
@@ -286,7 +320,7 @@ article {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("assets/snapshot-britishmeals.png");
+    url("assets/projects/snapshot-britishmeals.png");
   background-position: center;
 }
 
@@ -296,7 +330,7 @@ article {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("assets/eagle-english.png");
+    url("projects/eagle-english.png");
   background-position: center;
 }
 
@@ -306,7 +340,7 @@ article {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("assets/snapshot-leaderboard.png");
+    url("assets/projects/snapshot-leaderboard.png");
   background-position: center;
 }
 
@@ -316,7 +350,7 @@ article {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("assets/snapshot-brewdog.png");
+    url("assets/projects/snapshot-brewdog.png");
   background-position: center;
 }
 
@@ -326,7 +360,7 @@ article {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("assets/snapshot-bookstore.png");
+    url("assets/projects/snapshot-bookstore.png");
   background-position: center;
 }
 
@@ -336,7 +370,7 @@ article {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("assets/project6.jpeg");
+    url("assets/projects/math-magicians.png");
   background-position: center;
 }
 
@@ -655,16 +689,24 @@ article.featured {
 #aboutme {
   margin-top: 120px;
   padding: 120px 24px 0;
-  background: url("assets/illustration-about-me-mobile.png") no-repeat;
-  background-position: right bottom;
+  background: url("assets/design/illustration-about-me.png") no-repeat;
+  background-position: 110% 60%;
+  background-size: 45%;
   background-color: #1c1a19;
   color: #f4f5f7;
+}
+
+@media screen and (max-width: 558px) {
+  #aboutme {
+    background-position: right 98%;
+    background-size: 45%;
+  }
 }
 
 #aboutme h2 {
   font-family: "Crete Round", "Gill Sans", sans-serif;
   font-style: normal;
-  font-size: 72px;
+  font-size: 48px;
   font-weight: 400;
   line-height: 88px;
   letter-spacing: 0.37px;
@@ -685,7 +727,7 @@ article.featured {
   color: #ff6b00;
 }
 
-#aboutme p {
+.about-me-wrap {
   font-family:
     "Inter",
     "Segoe UI",
@@ -695,6 +737,46 @@ article.featured {
     sans-serif;
   line-height: 24px;
   padding-bottom: 12px;
+  font-size: 13px;
+}
+
+.about-me-wrap p {
+  text-align: justify;
+}
+
+.about-me-wrap span {
+  color: #ff6b00;
+  font-weight: 700;
+}
+
+.about-me-text1 {
+  padding-bottom: 50px;
+}
+
+.about-me-text2 {
+  padding: 50px 0;
+}
+
+.about-me-image-area {
+  display: flex;
+}
+
+.about-me-image-area img {
+  width: 60%;
+  height: 60%;
+  margin-right: -500px;
+}
+
+.about-me-wrap ul {
+  padding: 10px 0 10px 16px;
+}
+
+.about-me-wrap ul li {
+  padding: 5px 0;
+}
+
+.about-me-wrap ul li::marker {
+  color: #ff6b00 !important;
 }
 
 /* get resume button */
@@ -702,7 +784,7 @@ article.featured {
   border-bottom: 1px solid white;
 
   /* divisor line */
-  padding-bottom: 209px;
+  padding-bottom: 30px;
 }
 
 /* grid for skills list */
@@ -851,15 +933,17 @@ textarea {
 }
 
 .footer {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
   border-top: 1px solid #dfe1e6;
+  gap: 12px;
 }
 
 .footer ul {
   margin: 24px 0 16px;
-  padding: 0 30%;
   gap: 12px;
 }
 
@@ -927,7 +1011,7 @@ textarea {
   }
 
   .intro {
-    background: url("assets/Illustration-header2.png") no-repeat;
+    background: url("assets/design/Illustration-header2.png") no-repeat;
     background-position: right;
     background-size: 38%;
     background-color: #1c1a19;
@@ -1017,9 +1101,10 @@ textarea {
   }
 
   #aboutme {
+    width: 100%;
     margin-top: 80px;
-    padding: 80px 0 0 40px;
-    background: url("assets/illustration-about-me.png") no-repeat;
+    padding: 80px 40px 0;
+    background: url("assets/design/illustration-about-me.png") no-repeat;
     background-position: right;
     background-size: 42%;
     background-color: #1c1a19;
@@ -1029,9 +1114,14 @@ textarea {
     text-align: left;
   }
 
-  #aboutme p {
-    width: 344px;
+  .about-me-wrap {
+    display: flex;
+    flex-direction: column;
     padding: 0 0 28px 0;
+  }
+
+  .about-me-wrap ul {
+    padding-left: 24px;
   }
 
   .get-resume {
@@ -1131,7 +1221,7 @@ textarea {
 
   /* intro */
   .intro {
-    background: url("assets/Illustration-header2.png") no-repeat;
+    background: url("assets/design/Illustration-header2.png") no-repeat;
     background-position: right;
     background-size: 45%;
     background-color: #1c1a19;
@@ -1332,7 +1422,7 @@ textarea {
   /* ABOUT ME PAGE */
   #aboutme {
     padding: 80px 96px 0 10%;
-    background: url("assets/illustration-about-me.png") no-repeat;
+    background: url("assets/design/illustration-about-me.png") no-repeat;
     background-position: right;
     background-size: 45%;
     background-color: #1c1a19;
@@ -1361,10 +1451,11 @@ textarea {
     color: #ff6b00;
   }
 
-  #aboutme p {
+  .about-me-wrap {
     font-size: 12px;
     line-height: 18px;
-    width: 280px;
+
+    /* width: 280px; */
     padding: 24px 0 10px 0;
   }
 
@@ -1564,7 +1655,7 @@ textarea {
   /* INTRO SECTION */
 
   .intro {
-    background: url("assets/Illustration-header2.png") no-repeat;
+    background: url("assets/design/Illustration-header2.png") no-repeat;
     background-position: right;
     background-size: 38%;
     background-color: #1c1a19;
@@ -1710,32 +1801,32 @@ textarea {
   }
 
   .card1:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/snapshot-britishmeals.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/projects/snapshot-britishmeals.png);
     background-position: center;
   }
 
   .card2:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/eagle-english.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/projects/eagle-english.png);
     background-position: center;
   }
 
   .card3:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/snapshot-leaderboard.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/projects/snapshot-leaderboard.png);
     background-position: center;
   }
 
   .card4:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/snapshot-brewdog.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/projects/snapshot-brewdog.png);
     background-position: center;
   }
 
   .card5:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/bookstore.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/projects/bookstore.png);
     background-position: center;
   }
 
   .card6:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/math-magicians.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/projects/math-magicians.png);
     background-position: center;
   }
 
@@ -1745,7 +1836,7 @@ textarea {
 
   #aboutme {
     padding: 130px 142px 0 130px;
-    background: url("assets/illustration-about-me.png") no-repeat;
+    background: url("assets/design/illustration-about-me.png") no-repeat;
     background-position: right;
     background-size: 40%;
     background-color: #1c1a19;
@@ -1773,10 +1864,11 @@ textarea {
     color: #ff6b00;
   }
 
-  #aboutme p {
-    font-size: 20px;
+  .about-me-wrap {
+    font-size: 18px;
     line-height: 32px;
-    width: 566px;
+
+    /* width: 566px; */
     padding: 18px 0 48px 0;
     margin: 0;
   }
@@ -1903,5 +1995,11 @@ textarea {
 
   .details .details-p {
     padding-right: 16px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #aboutme {
+    background-size: 26%;
   }
 }

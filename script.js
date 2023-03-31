@@ -8,7 +8,7 @@ const portifolio = [
     headingDesktop: 'Shoe Store',
     highlight: 'A marketplace for shoes. Users can create an account, add items to their cart, and purchase them. There is also a seller dashboard where they can add new items to the store, select iconic products to display in home page, manage promo codes, orders and much more.',
     highlightDetails: 'A marketplace for shoes. Users can create an account, add items to their cart, and purchase them. There is also a seller dashboard where they can add new items to the store, select iconic products to display in home page, manage promo codes, orders and much more. Fully built with Ruby on Rails and plain CSS (following BEM), using Amazon S3 for image storage, turbo rails for the instant search bar and filters.',
-    image: 'assets/shoestore.png',
+    image: 'assets/projects/shoestore.png',
     badge1: 'ruby',
     badge2: 'rails',
     badge3: 'Amazon S3',
@@ -21,7 +21,7 @@ const portifolio = [
     headingDesktop: 'British Classic Meals',
     highlight: 'The British Classic Meals is a seclection of the most favorite and famous british recipes.',
     highlightDetails: 'The British Classic Meals is a seclection of the most favorite and famous british recipes. Things you can do in this website: check the list of meals, like the recipe, view the complete recipe including list of ingredients, view comments of other users, leave your comment about the meal. Check it out! What is your favorite from the list? Or which one would you choose to eat now if you could?',
-    image: 'assets/snapshot-britishmeals.png',
+    image: 'assets/projects/snapshot-britishmeals.png',
     badge1: 'css',
     badge2: 'html',
     badge3: 'JavaScript',
@@ -34,7 +34,7 @@ const portifolio = [
     headingDesktop: 'Eagle English',
     highlight: 'This is a prototype for an English school company. Built to practice my skills in HTML CSS and JavaScript, mainly regarding responsiveness.',
     highlightDetails: "This project was designed to test some of the abilities I learned in the first module (5 weeks) of the Microverse program, such as HTML, CSS, JavaScript and Communication, mainly regarding responsiveness. It's a prototype landing page for an English School where you can find some basic information about the course and a little about the teachers.",
-    image: 'assets/eagle-english.png',
+    image: 'assets/projects/eagle-english.png',
     badge1: 'scss',
     badge2: 'html',
     badge3: 'JavaScript',
@@ -47,7 +47,7 @@ const portifolio = [
     headingDesktop: 'Leaderboard',
     highlight: 'Keep scores of a game by adding new entries and having an updated ordered rank. API stored information.',
     highlightDetails: "With the Leaderboard website the user can keep scores of a game by adding new entries and having an updated ordered rank. Once the score is submitted you can't remove it. However you can start a new leaderboard (or game) and store new scores from scratch. All data is preserved thanks to the external Leaderboard API service. This is a project for learning purposes which I'll practice medium-fidelity wireframes to create a UI.",
-    image: 'assets/snapshot-leaderboard.png',
+    image: 'assets/projects/snapshot-leaderboard.png',
     badge1: 'css',
     badge2: 'html',
     badge3: 'JavaScript',
@@ -60,7 +60,7 @@ const portifolio = [
     headingDesktop: 'BrewDog Beer Guide ',
     highlight: 'The BrewDog Beer Guide is a web application for beer lovers, in particular those who like the BrewDog brewery.',
     highlightDetails: 'The BrewDog Beer Guide is a web application for beer lovers, in particular those who like the BrewDog brewery. Here you filter the beers according to their bitterness level and also you can find more details about the beers of that company.',
-    image: 'assets/snapshot-brewdog.png',
+    image: 'assets/projects/snapshot-brewdog.png',
     badge1: 'React',
     badge2: 'Redux',
     badge3: 'JavaScript',
@@ -73,7 +73,7 @@ const portifolio = [
     headingDesktop: 'Bookstore',
     highlight: 'A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
     highlightDetails: "Bookstore is a website for all reading fans. It is a Single Page App (SPA) that allows users to: display a list of books, add books to the list, remove books from the list. It is part of my journey at Microverse, that's my first React Redux based project.",
-    image: 'assets/bookstore.png',
+    image: 'assets/projects/bookstore.png',
     badge1: 'React',
     badge2: 'Redux',
     badge3: 'Javascript',
@@ -86,7 +86,7 @@ const portifolio = [
     headingDesktop: 'Math-Magicians',
     highlight: 'Math magicians is a Single Page App (SPA) for all fans of mathematics. Make simple calculations or read a random math-related quote.',
     highlightDetails: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote. It took aproximately 1 week between studying and doing it. This applicatino has 3 pages: Home Page, Calculator Page and a Quote page. To build this app these React features were used: Functional components | Hooks | Router | Jest for testing',
-    image: 'assets/math-magicians.png',
+    image: 'assets/projects/math-magicians.png',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
@@ -99,7 +99,7 @@ const portifolio = [
     headingDesktop: 'Geek The Blog',
     highlight: '6 - A daily selection of privately personalized reads, no accounts or sign-ups require has been the industrys standard',
     highlightDetails: 'Highligh 6 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'assets/project6.jpeg',
+    image: 'assets/projects/project6.jpeg',
     badge1: 'css',
     badge2: 'html',
     badge3: 'Bootstrap',
@@ -458,10 +458,9 @@ window.addEventListener('click', (e) => {
   }
 });
 
-logoSplash = document.querySelector('.logo-splash');
-splashScreen = document.getElementById('splash-screen');
+const splashScreen = document.getElementById('splash-screen');
 
 // Add class 'hide' from splash screen after 3 seconds the page loaded
-setTimeout(()=> {
+setTimeout(() => {
   splashScreen.classList.add('hide');
-}, 3500);
+}, 2800);
