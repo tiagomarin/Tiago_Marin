@@ -151,7 +151,7 @@ header {
   background-color: #1c1a19;
 }
 
-@media screen and (min-height: 620px) {
+@media screen and (min-height: 620px) and (max-height: 920px) {
   .intro {
     height: calc(100vh - 40px);
   }
